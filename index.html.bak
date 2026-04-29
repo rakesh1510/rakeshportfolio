@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Rakesh Prajapati — Project Manager | Software Architect</title>
+  <meta name="description" content="Project Manager / Senior Software Engineer / Software Architect with 12+ years experience in engineering leadership, architecture design and reliable project delivery.">
+  <meta name="keywords" content="Project Manager, Software Architect, Senior Software Engineer, Scrum Master, PHP, Laravel, AWS, DevOps, Jira">
+  <meta property="og:title" content="Rakesh Prajapati — Project Manager | Software Architect">
+  <meta property="og:description" content="Project Manager / Senior Software Engineer / Software Architect with 12+ years experience in engineering leadership, architecture design and reliable project delivery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Rakesh Prajapati", "jobTitle": "Project Manager / Senior Software Engineer / Software Architect", "email": "mailto:rp151090@gmail.com", "telephone": "+49 17666145047", "address": {"@type": "PostalAddress", "addressLocality": "Heilbronn", "addressRegion": "Baden-Württemberg", "addressCountry": "DE"}, "sameAs": ["https://www.linkedin.com/in/rakesh-prajapati-83124238"]}</script>
+</head>
+<body>
+
+  <div class="container navWrap">
+    <div class="nav">
+      <a class="brand" href="index.html">Portfolio.</a>
+      <div class="menu">
+        <a href="experience.html" class="navlink" data-i18n="nav.experience">Experience</a>
+        
+        <a href="value.html" class="navlink" data-i18n="nav.value">Why Hire Me</a>
+        <a href="skills.html" class="navlink" data-i18n="nav.skills">Skills</a>
+        <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+        <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+        <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
+        <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="actions">
+        
+<button class="btn" type="button" id="langToggle">DE</button>
+<button class="hamburger" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+</button>
+<a class="btn btnPrimary" href="contact.html" data-i18n="nav.letsTalk">Let\'s Talk</a>
+      </div>
+
+      <div class="mobileMenu">
+<a href="experience.html" class="navlink" data-i18n="nav.experience">Experience</a>
+        <a href="skills.html" class="navlink" data-i18n="nav.skills">Skills</a>
+        <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+        <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+        <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
+        <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+      </div>
+</div>
+    </div>
+    <div class="pillRow">
+      <div class="pill"><span class="dot"></span> <span data-i18n="pill.available">Available for opportunities</span></div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="container heroGrid">
+      <div>
+        <h1 class="hi"><span data-i18n="home.hi">Hi, I'm</span> <span class="nameAccent">Rakesh<br/>Prajapati</span></h1>
+        <div class="subtitle" data-i18n="home.role">Senior Software Engineer / Software Architect / Project Manager </div>
+        <div class="summary" data-i18n="home.summary">Focused and results-oriented professional with 12+ years of experience in software development, full‑stack engineering, software architecture and project delivery. I bridge business goals with scalable technical solutions and lead teams with clarity and accountability.</div>
+
+        <div class="ctaRow">
+          <a class="cta ctaPrimary" href="contact.html"><svg class="ctaIcon" viewBox="0 0 24 24" fill="none"><path d="M4 7.5l8 5 8-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 6h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2"/></svg> <span data-i18n="home.cta.contact">Contact Me</span> <svg class="ctaIcon" viewBox="0 0 24 24" fill="none"><path d="M5 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="cta" href="tel:+4917666145047"><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M7 3h3l2 5-2 1c1 3 3 5 6 6l1-2 5 2v3c0 1-1 2-2 2-10 0-18-8-18-18 0-1 1-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> <span data-i18n="home.cta.call">Call Now</span></a>
+          <a class="cta" href="https://www.linkedin.com/in/rakesh-prajapati-83124238" target="_blank" rel="noopener"><svg class="ctaIcon" viewBox="0 0 24 24" fill="none"><path d="M6.5 9.5V20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M11 20v-6.2c0-2.1 1.2-3.4 3-3.4s3 1.3 3 3.4V20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> LinkedIn</a>
+        </div>
+
+        <div class="contactLine">
+          <span><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-4.5 7-12a7 7 0 1 0-14 0c0 7.5 7 12 7 12z" stroke="currentColor" stroke-width="2"/><path d="M12 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" stroke="currentColor" stroke-width="2"/></svg> Heilbronn, Germany</span>
+          <span><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M7 3h3l2 5-2 1c1 3 3 5 6 6l1-2 5 2v3c0 1-1 2-2 2-10 0-18-8-18-18 0-1 1-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> <a href="tel:+4917666145047">+49 17666145047</a></span>
+          <span><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 7.5l8 5 8-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 6h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2"/></svg> <a href="mailto:rp151090@gmail.com">rp151090@gmail.com</a></span>
+        </div>
+      </div>
+
+ <aside class="sideCard">
+
+  <div class="kpiRow">
+    <div class="kpi">
+      <div class="n">12+</div>
+      <div class="t">Years Experience</div>
+    </div>
+
+    <div class="kpi">
+      <div class="n">18</div>
+      <div class="t">Team Managed</div>
+    </div>
+  </div>
+
+  <div class="chips">
+
+
+    <span class="chip">PHP</span>
+    <span class="chip">OOP</span>
+    <span class="chip">Laravel / PHP</span>
+    <span class="chip">MySQL</span>
+    <span class="chip">MongoDB</span>
+    <span class="chip">Shell Scripting</span>
+    <span class="chip">Apache</span>
+    <span class="chip">Nginx</span>
+    <span class="chip">SOAP</span>
+    <span class="chip">REST APIs</span>
+    <span class="chip">Web Services</span>
+    <span class="chip">HTML5</span>
+    <span class="chip">CSS3</span>
+    <span class="chip">JavaScript</span>
+    <span class="chip">AJAX</span>
+    <span class="chip">jQuery</span>
+    <span class="chip">JSON</span>
+    <span class="chip">XML</span>
+    <span class="chip">Angular</span>
+    <span class="chip">React.js</span>
+    <span class="chip">Python</span>
+    <span class="chip">RabbitMQ</span>
+    <span class="chip">CodeIgniter</span>
+    <span class="chip">WordPress</span>
+    <span class="chip">Git</span>
+    <span class="chip">AWS</span>
+    <span class="chip">Azure</span>
+    <span class="chip">Composer</span>
+    <span class="chip">Scrum</span>
+    <span class="chip">Jira</span>
+    <span class="chip">Kanban</span>
+    <span class="chip">Docker</span>
+    <span class="chip">Jenkins</span>
+    <span class="chip">Terraform</span>
+    <span class="chip">Kubernetes</span>
+    <span class="chip">ServiceNow</span>
+    <span class="chip">Confluence</span>
+    <span class="chip">DevOps</span>
+    <span class="chip">Linux</span>
+    <span class="chip">Windows</span>
+    <span class="chip">RedHat</span>
+    <span class="chip">CentOS</span>
+    <span class="chip">Ubuntu</span>
+    <span class="chip">MacOS</span>
+
+  </div>
+
+  <div class="desc">
+    Want to hire me? Click <b>Let's Talk</b> or call directly:<br>
+    <a href="tel:+4917666145047" class="phone">+49 17666145047</a>
+  </div>
+
+</aside>
+    </div>
+  
+<div class="card reveal" style="margin-top:22px">
+<h3 style="font-weight:950; font-size:22px;" data-i18n="about.title">
+  About Me
+</h3>
+
+<div class="car" style="color: #7c8698;font-size: 16.5px;">
+
+  <p data-i18n="about.p1">
+    I am a results-driven Software Engineer, Project Manager, and Solution Architect with over 
+    <b>12 years of experience</b> delivering enterprise-grade software solutions across complex technical environments. 
+    I specialize in bridging business objectives with scalable technology, leading engineering teams, and ensuring reliable delivery from concept to production.
+  </p>
+
+  <p data-i18n="about.p2">
+    Currently, I work at <b>F.A.S.T. GmbH, Germany</b>, where I lead enterprise software initiatives and manage cross-functional engineering teams 
+    to deliver <b>scalable, high-performance systems</b>. My role combines delivery ownership, technical leadership, and architectural decision-making 
+    to ensure measurable business outcomes.
+  </p>
+
+  <p data-i18n="about.p3">
+    Previously, I worked with <b>Larsen &amp; Toubro Infotech (LTI)</b>, contributing to large-scale enterprise solutions for international organizations 
+    including <b><u>Netflix, Paramount, Sony, and Viacom</u></b>. I was also involved in enterprise initiatives related to 
+    <b>Saint-Gobain (France)</b>, gaining valuable experience within global engineering environments and high-quality delivery standards.
+  </p>
+
+  <p data-i18n="about.p4">
+    I hold certifications in <b>AWS Solutions Architecture, DevOps, and Project Management (PMP)</b> and I am recognized for solving complex 
+    technical challenges while delivering stable, maintainable, and business-aligned solutions.
+  </p>
+
+  <p data-i18n="about.p5">
+    Throughout my career, I have successfully led projects across the full software lifecycle — from requirements analysis and architecture design 
+    to development, deployment, and long-term optimization. I consistently improve <b>performance, scalability, and operational efficiency</b> 
+    using modern engineering practices and structured delivery processes.
+  </p>
+
+  <p data-i18n="about.p6">
+    Beyond technical execution, I bring strong business awareness — identifying cost optimization opportunities, improving service levels, 
+    and ensuring projects are delivered <b>on time and within budget</b>. My communication and leadership skills allow me to build trust 
+    across teams while maintaining compliance with organizational standards.
+  </p>
+
+  <p data-i18n="about.core">
+    <b>Core Expertise:</b><br>
+    Software Architecture • Project Leadership • Enterprise Systems • Full-Stack Development • Agile Delivery • Technical Strategy • 
+    Database Design • System Integration • DevOps Practices • Performance Optimization • Stakeholder Management • Engineering Leadership
+  </p>
+
+</div>
+</div>
+
+</section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid2">
+        <div class="card reveal">
+          <div style="font-weight:950; font-size:18px;"><span data-i18n="home.forRecruiters">For Recruiters</span></div>
+          <div class="desc">Open <b>Documents</b> to download CV & Cover Letter, or go to <b>Contact</b> to call/email me instantly.</div>
+          <div class="ctaRow">
+            <a class="cta ctaPrimary" href="documents.html">View Documents</a>
+            <a class="cta" href="contact.html" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/app.js"></script>
+
+<div id="footerMount"></div>
+<script src="assets/i18n.js"></script>
+<script src="assets/app.js"></script>
+<script>
+  (function(){
+    fetch('assets/footer.html', {cache:'no-store'})
+      .then(r=>r.text())
+      .then(html=>{
+        const m = document.getElementById('footerMount');
+        if(m){ m.innerHTML = html; }
+        if(window.__setLang){
+          const saved = localStorage.getItem('site_lang') || 'en';
+          window.__setLang(saved);
+        }
+      })
+      .catch(()=>{});
+  })();
+</script>
+
+</body></html>

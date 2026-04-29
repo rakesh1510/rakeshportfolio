@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Skills | Rakesh Prajapati — Senior Software Engineer Germany</title>
+  <meta name="description" content="Technical and leadership skills of Rakesh Prajapati: PHP, Laravel, MySQL, REST APIs, DevOps, AWS, Docker, Jira, Scrum, architecture and project management.">
+  <meta name="keywords" content="Rakesh Prajapati Skills, PHP Developer Germany, Software Architect, IT Project Manager, Laravel, AWS, DevOps, MySQL, Jira, Scrum">
+  <meta name="author" content="Rakesh Prajapati">
+  <link rel="canonical" href="https://rakeshprajapati.de/skills.html">
+
+  <meta property="og:title" content="Skills | Rakesh Prajapati">
+  <meta property="og:description" content="Technical, architecture, DevOps and leadership skills of Rakesh Prajapati.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rakeshprajapati.de/skills.html">
+
+  <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    body{
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(124,58,237,.12), transparent 30%),
+        linear-gradient(180deg,#f8fbff,#eef4ff);
+      color:#0f172a;
+    }
+
+    .skills-hero{
+      padding:70px 0 35px;
+    }
+
+    .skills-hero-card{
+      padding:44px;
+      border-radius:34px;
+      background:#fff;
+      border:1px solid #e5e7eb;
+      box-shadow:0 24px 70px rgba(15,23,42,.10);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .skills-hero-card:before{
+      content:"";
+      position:absolute;
+      right:-90px;
+      top:-90px;
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      background:linear-gradient(135deg,rgba(37,99,235,.22),rgba(124,58,237,.18));
+    }
+
+    .skills-hero-card > *{
+      position:relative;
+      z-index:1;
+    }
+
+    .skills-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:9px 16px;
+      border-radius:999px;
+      background:#dbeafe;
+      color:#1d4ed8;
+      font-weight:950;
+      margin-bottom:16px;
+    }
+
+    .skills-title{
+      font-size:clamp(38px,5vw,64px);
+      line-height:1.02;
+      letter-spacing:-2px;
+      margin:0 0 16px;
+      color:#0f172a;
+    }
+
+    .skills-title span{
+      background:linear-gradient(135deg,#2563eb,#7c3aed);
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+
+    .skills-sub{
+      color:#475569;
+      font-size:18px;
+      line-height:1.75;
+      max-width:900px;
+    }
+
+    .skills-stats{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+      margin-top:28px;
+    }
+
+    .skills-stat{
+      padding:18px;
+      border-radius:22px;
+      background:#f8fafc;
+      border:1px solid #e5e7eb;
+    }
+
+    .skills-stat strong{
+      display:block;
+      font-size:28px;
+      color:#0f172a;
+      margin-bottom:5px;
+    }
+
+    .skills-stat span{
+      color:#64748b;
+      font-weight:800;
+      font-size:14px;
+    }
+
+    .section-skills{
+      padding:38px 0 60px;
+    }
+
+    .filter-wrap{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+      margin-bottom:26px;
+    }
+
+    .filterBtn{
+      border:1px solid #dbe3ef;
+      background:#fff;
+      color:#334155;
+      padding:11px 16px;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:900;
+      transition:.2s;
+      box-shadow:0 8px 22px rgba(15,23,42,.05);
+    }
+
+    .filterBtn.active,
+    .filterBtn:hover{
+      background:#0f172a;
+      color:#fff;
+      transform:translateY(-2px);
+    }
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+    }
+
+    .skill-card{
+      padding:30px;
+      border-radius:32px;
+      background:#fff;
+      border:1px solid #e5e7eb;
+      box-shadow:0 18px 55px rgba(15,23,42,.08);
+      transition:.25s;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 28px 80px rgba(15,23,42,.14);
+    }
+
+    .skill-card:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg,rgba(37,99,235,.06),rgba(124,58,237,.04));
+      opacity:0;
+      transition:.25s;
+    }
+
+    .skill-card:hover:before{
+      opacity:1;
+    }
+
+    .skill-card > *{
+      position:relative;
+      z-index:1;
+    }
+
+    .skill-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:18px;
+    }
+
+    .skill-title-wrap{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    .skill-icon{
+      width:52px;
+      height:52px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,#dbeafe,#ede9fe);
+      font-size:24px;
+    }
+
+    .skill-card h3{
+      margin:0;
+      color:#0f172a;
+      font-size:23px;
+      font-weight:950;
+    }
+
+    .skill-count{
+      padding:8px 12px;
+      border-radius:999px;
+      background:#f1f5f9;
+      color:#475569;
+      font-weight:900;
+      font-size:13px;
+      white-space:nowrap;
+    }
+
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .chip{
+      padding:10px 14px;
+      border-radius:999px;
+      background:#f8fafc;
+      color:#334155;
+      border:1px solid #e2e8f0;
+      font-weight:850;
+      font-size:14px;
+      transition:.2s;
+    }
+
+    .chip:hover{
+      background:#dbeafe;
+      color:#1d4ed8;
+      transform:translateY(-2px);
+    }
+
+    .highlight-section{
+      margin-top:30px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:22px;
+    }
+
+    .highlight-card{
+      padding:32px;
+      border-radius:32px;
+      background:#fff;
+      border:1px solid #e5e7eb;
+      box-shadow:0 18px 55px rgba(15,23,42,.08);
+    }
+
+    .highlight-card h2{
+      margin:0 0 14px;
+      color:#0f172a;
+      font-size:28px;
+      font-weight:950;
+    }
+
+    .kvList{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:grid;
+      gap:10px;
+    }
+
+    .kvList li{
+      position:relative;
+      padding-left:28px;
+      color:#475569;
+      line-height:1.65;
+    }
+
+    .kvList li:before{
+      content:"✓";
+      position:absolute;
+      left:0;
+      top:0;
+      color:#16a34a;
+      font-weight:950;
+    }
+
+    .cta-panel{
+      margin-top:30px;
+      padding:34px;
+      border-radius:32px;
+      background:linear-gradient(135deg,#0f172a,#1d4ed8);
+      color:#fff;
+      text-align:center;
+      box-shadow:0 22px 70px rgba(15,23,42,.18);
+    }
+
+    .cta-panel h2{
+      margin:0 0 10px;
+      font-size:32px;
+    }
+
+    .cta-panel p{
+      color:#dbeafe;
+      max-width:760px;
+      margin:0 auto 22px;
+      line-height:1.7;
+    }
+
+    .ctaRow{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:13px 18px;
+      border-radius:999px;
+      background:#fff;
+      color:#0f172a;
+      border:1px solid #e5e7eb;
+      font-weight:950;
+      transition:.25s;
+      box-shadow:0 10px 30px rgba(15,23,42,.06);
+    }
+
+    .cta:hover{
+      transform:translateY(-3px);
+      box-shadow:0 18px 45px rgba(15,23,42,.12);
+    }
+
+    .ctaPrimary{
+      color:#fff;
+      border:0;
+      background:linear-gradient(135deg,#2563eb,#7c3aed);
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(24px);
+      transition:opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.show{
+      opacity:1;
+      transform:none;
+    }
+
+    @media(max-width:900px){
+      .skills-stats,
+      .skills-grid,
+      .highlight-section{
+        grid-template-columns:1fr;
+      }
+
+      .skills-hero-card,
+      .skill-card,
+      .highlight-card,
+      .cta-panel{
+        padding:26px;
+      }
+
+      .skills-title{
+        letter-spacing:-1px;
+      }
+
+      .skill-head{
+        align-items:flex-start;
+        flex-direction:column;
+      }
+    }
+        /* FINAL MOBILE MENU CLICK FIX */
+
+.menu-toggle {
+  display: none !important;
+  position: relative;
+  z-index: 100001;
+  pointer-events: auto;
+}
+
+.nav {
+  position: relative;
+  z-index: 99999;
+}
+
+.nav.mobile-open {
+  position: fixed;
+  top: 24px;
+  left: 16px;
+  right: 16px;
+  z-index: 100000 !important;
+  pointer-events: auto;
+}
+
+.nav.mobile-open .menu,
+.nav.mobile-open .actions,
+.nav.mobile-open .navlink,
+.nav.mobile-open .btn,
+.nav.mobile-open a,
+.nav.mobile-open button {
+  pointer-events: auto !important;
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: inline-flex !important;
+  }
+
+  .menu,
+  .actions {
+    display: none !important;
+  }
+
+  .nav.mobile-open .menu,
+  .nav.mobile-open .actions {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 901px) {
+  .menu-toggle {
+    display: none !important;
+  }
+
+  .menu {
+    display: flex !important;
+  }
+
+  .actions {
+    display: flex !important;
+  }
+}
+
+/* Floating buttons should not block mobile menu */
+.whatsapp-float,
+.call-float,
+.floating-buttons,
+.float-buttons,
+.sticky-buttons {
+  z-index: 999 !important;
+}
+/* FINAL BEAUTIFUL MOBILE MENU */
+@media (max-width: 900px) {
+  .nav.mobile-open {
+    position: fixed !important;
+    top: 24px !important;
+    left: 16px !important;
+    right: 16px !important;
+    width: auto !important;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    align-items: center !important;
+
+    padding: 42px 32px !important;
+    border-radius: 32px !important;
+    background: rgba(255,255,255,.97) !important;
+    box-shadow: 0 22px 70px rgba(15,23,42,.18) !important;
+    z-index: 100000 !important;
+  }
+
+  .nav.mobile-open .brand {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    font-size: 30px !important;
+    line-height: 1 !important;
+  }
+
+  .nav.mobile-open .menu-toggle {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: 58px !important;
+    height: 58px !important;
+    border-radius: 50% !important;
+    font-size: 30px !important;
+  }
+
+  .nav.mobile-open .menu {
+    grid-column: 1 / -1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
+
+    width: 100% !important;
+    margin: 34px 0 24px !important;
+    padding: 30px 0 0 !important;
+    border-top: 1px solid #e5e7eb !important;
+
+    overflow: visible !important;
+  }
+
+  .nav.mobile-open .navlink {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+    text-align: center !important;
+    font-size: 22px !important;
+    font-weight: 900 !important;
+    line-height: 1.25 !important;
+    color: #64748b !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+  }
+
+  .nav.mobile-open .actions {
+    grid-column: 1 / -1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    width: 100% !important;
+  }
+
+  .nav.mobile-open .actions .btn,
+  .nav.mobile-open .actions a,
+  .nav.mobile-open .actions button {
+    width: 100% !important;
+    min-height: 58px !important;
+    border-radius: 999px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 18px !important;
+    font-weight: 900 !important;
+  }
+}
+/* ===== FINAL MOBILE MENU BUTTON ===== */
+.menu-toggle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background: rgba(255,255,255,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(15,23,42,.08);
+  backdrop-filter: blur(8px);
+  z-index: 100001;
+}
+
+.menu-toggle span {
+  width: 22px;
+  height: 2px;
+  background: #0f172a;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* ANIMATION → X */
+.nav.mobile-open .menu-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav.mobile-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav.mobile-open .menu-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* MOBILE ONLY */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: flex !important;
+  }
+}
+
+    /* ===== FIX MENU DESIGN ===== */
+@media (max-width: 900px) {
+  .nav.mobile-open {
+    position: fixed;
+    top: 20px;
+    left: 16px;
+    right: 16px;
+    border-radius: 28px;
+    padding: 28px 22px;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 25px 70px rgba(15,23,42,.18);
+    z-index: 100000;
+  }
+
+  .nav.mobile-open .menu {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+  }
+
+  .nav.mobile-open .navlink {
+    font-size: 20px;
+    font-weight: 800;
+    color: #64748b;
+    text-align: center;
+  }
+
+  .nav.mobile-open .actions {
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .nav.mobile-open .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ===== PREVENT FLOAT BUTTON OVERLAP ===== */
+.whatsapp-float,
+.call-float {
+  z-index: 10 !important;
+}
+/* ===== FINAL CLEAN MOBILE MENU ===== */
+
+/* BUTTON */
+.menu-toggle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background: rgba(255,255,255,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(15,23,42,.08);
+  backdrop-filter: blur(8px);
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  width: 22px;
+  height: 2px;
+  background: #0f172a;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* ANIMATION */
+.nav.mobile-open .menu-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav.mobile-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+.nav.mobile-open .menu-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu,
+  .actions {
+    display: none;
+  }
+
+  .nav.mobile-open {
+    position: fixed;
+    top: 20px;
+    left: 16px;
+    right: 16px;
+    border-radius: 28px;
+    padding: 26px;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 25px 70px rgba(15,23,42,.18);
+    z-index: 1000;
+  }
+
+  .nav.mobile-open .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav.mobile-open .navlink {
+    font-size: 20px;
+    font-weight: 800;
+    color: #64748b;
+    text-align: center;
+  }
+
+  .nav.mobile-open .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .nav.mobile-open .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 901px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .actions {
+    display: flex;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+<div class="container navWrap">
+  <div class="nav" id="mainNav">
+    <a class="brand" href="index.html">Portfolio.</a>
+
+ <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    <div class="menu">
+      <a href="experience.html" class="navlink" data-i18n="nav.experience">Experience</a>
+      <a href="value.html" class="navlink" data-i18n="nav.value">Why Hire Me</a>
+      <a href="skills.html" class="navlink" data-i18n="nav.skills">Skills</a>
+      <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+      <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+      <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
+      <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+    </div>
+
+    <div class="actions">
+        <button class="btn" type="button" id="langToggle">DE</button>
+        <a class="btn btnPrimary" href="tel:+4917666145047" data-i18n="nav.callNow">Call Now</a>
+      </div>
+  </div>
+</div>
+
+  <section class="skills-hero">
+    <div class="container">
+      <div class="skills-hero-card reveal">
+        <div class="skills-badge" data-i18n="skills.badge">🧰 Technical & Leadership Skills</div>
+
+        <h1 class="skills-title" data-i18n="skills.title">
+          Full-stack engineering, architecture and <span>delivery leadership.</span>
+        </h1>
+
+        <p class="skills-sub" data-i18n="skills.subtitle">
+          A practical skill set across backend development, frontend integration, databases, DevOps, cloud, project management and enterprise delivery.
+        </p>
+
+        <div class="skills-stats">
+          <div class="skills-stat">
+            <strong>12+</strong>
+            <span data-i18n="skills.stat.years">Years Experience</span>
+          </div>
+
+          <div class="skills-stat">
+            <strong>40+</strong>
+            <span data-i18n="skills.stat.technical">Technical Skills</span>
+          </div>
+
+          <div class="skills-stat">
+            <strong>18+</strong>
+            <span data-i18n="skills.stat.team">Team Managed</span>
+          </div>
+
+          <div class="skills-stat">
+            <strong>360°</strong>
+            <span data-i18n="skills.stat.delivery">Delivery Ownership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-skills">
+    <div class="container">
+
+      <div class="filter-wrap reveal">
+        <button class="filterBtn active" data-filter="all" data-i18n="skills.filter.all">All</button>
+        <button class="filterBtn" data-filter="backend" data-i18n="skills.filter.backend">Backend</button>
+        <button class="filterBtn" data-filter="frontend" data-i18n="skills.filter.frontend">Frontend</button>
+        <button class="filterBtn" data-filter="devops" data-i18n="skills.filter.devops">DevOps / Cloud</button>
+        <button class="filterBtn" data-filter="management" data-i18n="skills.filter.management">Leadership</button>
+        <button class="filterBtn" data-filter="os" data-i18n="skills.filter.os">Operating Systems</button>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+
+        <article class="skill-card reveal" data-cat="backend">
+          <div class="skill-head">
+            <div class="skill-title-wrap">
+              <div class="skill-icon">⚙️</div>
+              <h3 data-i18n="skills.backend.title">Backend & Databases</h3>
+            </div>
+            <span class="skill-count" data-i18n="skills.count.coreStack">Core stack</span>
+          </div>
+
+          <div class="chips">
+            <span class="chip">PHP</span>
+            <span class="chip">OOP</span>
+            <span class="chip">Laravel</span>
+            <span class="chip">CodeIgniter</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">SQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Redis</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">SOAP</span>
+            <span class="chip">Web Services</span>
+            <span class="chip">RabbitMQ</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal" data-cat="frontend">
+          <div class="skill-head">
+            <div class="skill-title-wrap">
+              <div class="skill-icon">🎨</div>
+              <h3 data-i18n="skills.frontend.title">Frontend & Integration</h3>
+            </div>
+            <span class="skill-count" data-i18n="skills.count.uiApis">UI + APIs</span>
+          </div>
+
+          <div class="chips">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">AJAX</span>
+            <span class="chip">jQuery</span>
+            <span class="chip">JSON</span>
+            <span class="chip">XML</span>
+            <span class="chip">Angular</span>
+            <span class="chip">React.js</span>
+            <span class="chip">WordPress</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal" data-cat="devops">
+          <div class="skill-head">
+            <div class="skill-title-wrap">
+              <div class="skill-icon">☁️</div>
+              <h3 data-i18n="skills.devops.title">DevOps, Cloud & Tools</h3>
+            </div>
+            <span class="skill-count" data-i18n="skills.count.deliveryStack">Delivery stack</span>
+          </div>
+
+          <div class="chips">
+            <span class="chip">AWS</span>
+            <span class="chip">Azure</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Jenkins</span>
+            <span class="chip">Terraform</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">Git</span>
+            <span class="chip">GitHub Actions</span>
+            <span class="chip">Composer</span>
+            <span class="chip">Apache</span>
+            <span class="chip">Nginx</span>
+            <span class="chip">Shell Scripting</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal" data-cat="management">
+          <div class="skill-head">
+            <div class="skill-title-wrap">
+              <div class="skill-icon">📊</div>
+              <h3 data-i18n="skills.leadership.title">Architecture & Leadership</h3>
+            </div>
+            <span class="skill-count" data-i18n="skills.count.management">Management</span>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Solution Architecture</span>
+            <span class="chip">Software Architecture</span>
+            <span class="chip">Project Management</span>
+            <span class="chip">Scrum Master</span>
+            <span class="chip">Team Management</span>
+            <span class="chip">Requirement Analysis</span>
+            <span class="chip">Documentation</span>
+            <span class="chip">Database Migration</span>
+            <span class="chip">Jira</span>
+            <span class="chip">Kanban</span>
+            <span class="chip">ServiceNow</span>
+            <span class="chip">Confluence</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal" data-cat="os">
+          <div class="skill-head">
+            <div class="skill-title-wrap">
+              <div class="skill-icon">🖥️</div>
+              <h3 data-i18n="skills.os.title">Operating Systems</h3>
+            </div>
+            <span class="skill-count" data-i18n="skills.count.serverReady">Server ready</span>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Linux</span>
+            <span class="chip">Windows</span>
+            <span class="chip">RedHat</span>
+            <span class="chip">CentOS</span>
+            <span class="chip">Ubuntu</span>
+            <span class="chip">MacOS</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="highlight-section">
+        <div class="highlight-card reveal">
+          <h2 data-i18n="skills.use.title">How I use these skills</h2>
+          <ul class="kvList">
+            <li data-i18n="skills.use.r1">Design scalable and maintainable software architecture.</li>
+            <li data-i18n="skills.use.r2">Build backend systems, APIs, dashboards and SaaS workflows.</li>
+            <li data-i18n="skills.use.r3">Improve performance, database queries and operational stability.</li>
+            <li data-i18n="skills.use.r4">Support delivery from requirements to deployment and maintenance.</li>
+          </ul>
+        </div>
+
+        <div class="highlight-card reveal">
+          <h2 data-i18n="skills.roles.title">Best-fit roles</h2>
+          <ul class="kvList">
+            <li data-i18n="skills.roles.r1">Senior Software Engineer</li>
+            <li data-i18n="skills.roles.r2">PHP Developer / Backend Developer</li>
+            <li data-i18n="skills.roles.r3">Software Architect / Solution Architect</li>
+            <li data-i18n="skills.roles.r4">IT Project Manager / Technical Project Lead</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta-panel reveal">
+        <h2 data-i18n="skills.cta.title">Need a technical person who can also lead delivery?</h2>
+        <p data-i18n="skills.cta.text">
+          I combine hands-on engineering with architecture thinking, stakeholder communication and reliable project execution.
+        </p>
+
+        <div class="ctaRow">
+          <a class="cta ctaPrimary" href="contact.html" data-i18n="common.contactMe">Contact Me</a>
+          <a class="cta" href="tel:+4917666145047" data-i18n="common.callNow">Call Now</a>
+          <a class="cta" href="experience.html" data-i18n="common.seeExperience">See Experience</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footerMount"></div>
+
+  <script src="assets/i18n.js"></script>
+  <script src="assets/app.js"></script>
+
+  <script>
+      
+            document.addEventListener('DOMContentLoaded', function () {
+  const nav = document.getElementById('mainNav');
+  const toggle = document.getElementById('menuToggle');
+
+  if (nav && toggle) {
+    toggle.addEventListener('click', function () {
+      nav.classList.toggle('mobile-open');
+    });
+  }
+});
+
+
+    const revealItems = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealItems.forEach(function(item){
+      observer.observe(item);
+    });
+
+    const filterButtons = document.querySelectorAll('.filterBtn');
+    const skillCards = document.querySelectorAll('#skillsGrid .skill-card');
+
+    filterButtons.forEach(function(button){
+      button.addEventListener('click', function(){
+        const filter = button.getAttribute('data-filter');
+
+        filterButtons.forEach(function(btn){
+          btn.classList.remove('active');
+        });
+
+        button.classList.add('active');
+
+        skillCards.forEach(function(card){
+          const category = card.getAttribute('data-cat');
+
+          if(filter === 'all' || category === filter){
+            card.style.display = 'block';
+          }else{
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    fetch('assets/footer.html', {cache:'no-store'})
+      .then(function(response){ return response.text(); })
+      .then(function(html){
+        const footerMount = document.getElementById('footerMount');
+        if(footerMount){ footerMount.innerHTML = html; }
+
+        if(window.__setLang){
+          const saved = localStorage.getItem('site_lang') || 'en';
+          window.__setLang(saved);
+        }
+      })
+      .catch(function(){});
+  </script>
+
+</body>
+</html>

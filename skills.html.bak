@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Skills — Rakesh Prajapati</title>
+  <meta name="description" content="Technical and leadership skills: architecture, cloud, DevOps, agile delivery, PHP/Laravel, AWS and more.">
+  <meta name="keywords" content="Project Manager, Software Architect, Senior Software Engineer, Scrum Master, PHP, Laravel, AWS, DevOps, Jira">
+  <meta property="og:title" content="Skills — Rakesh Prajapati">
+  <meta property="og:description" content="Technical and leadership skills: architecture, cloud, DevOps, agile delivery, PHP/Laravel, AWS and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Rakesh Prajapati", "jobTitle": "Project Manager / Senior Software Engineer / Software Architect", "email": "mailto:rp151090@gmail.com", "telephone": "+49 17666145047", "address": {"@type": "PostalAddress", "addressLocality": "Heilbronn", "addressRegion": "Baden-Württemberg", "addressCountry": "DE"}, "sameAs": ["https://www.linkedin.com/in/rakesh-prajapati-83124238"]}</script>
+</head>
+<body>
+
+  <div class="container navWrap">
+    <div class="nav">
+      <a class="brand" href="index.html">Portfolio.</a>
+      <div class="menu">
+        <a href="experience.html" class="navlink" data-i18n="nav.experience">Experience</a>
+        
+        <a href="value.html" class="navlink" data-i18n="nav.value">Why Hire Me</a>
+        <a href="skills.html" class="navlink active" data-i18n="nav.skills">Skills</a>
+        <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+        <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+        <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
+        <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="actions">
+        
+<button class="btn" type="button" id="langToggle">DE</button>
+<button class="hamburger" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+</button>
+<a class="btn btnPrimary" href="contact.html" data-i18n="nav.letsTalk">Let\'s Talk</a>
+      </div>
+
+      <div class="mobileMenu">
+<a href="experience.html" class="navlink" data-i18n="nav.experience">Experience</a>
+        <a href="skills.html" class="navlink active" data-i18n="nav.skills">Skills</a>
+        <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+        <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+        <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
+        <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+      </div>
+</div>
+    </div>
+    <div class="pillRow">
+      <div class="pill"><span class="dot"></span> <span data-i18n="pill.available">Available for opportunities</span></div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <div class="sectionIcon"><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M9 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div>
+          <h2 class="sectionTitle" data-i18n="sec.skills.title">Technical Skills</h2>
+          <div class="sectionSub" data-i18n="sec.skills.sub">Tools · technologies · leadership skills</div>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="card reveal">
+          <div style="font-weight:950; font-size:18px;">Operating System</div>
+          <div class="chips">
+            <div class="chip">LINUX</div><div class="chip">WINDOWS</div><div class="chip">REDHAT</div><div class="chip">CENTOS</div><div class="chip">UBUNTU</div><div class="chip">MACOS</div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div style="font-weight:950; font-size:18px;">Professional Skills</div>
+          <div class="chips">
+            <div class="chip">PHP</div><div class="chip">OOP</div><div class="chip">MYSQL</div><div class="chip">SQL</div><div class="chip">MONGODB</div>
+            <div class="chip">SHELL SCRIPTING</div><div class="chip">APACHE</div><div class="chip">NGINX</div><div class="chip">SOAP</div>
+            <div class="chip">REST APIs</div><div class="chip">WEB SERVICES</div><div class="chip">HTML5</div><div class="chip">CSS3</div><div class="chip">JAVASCRIPT</div>
+            <div class="chip">AJAX</div><div class="chip">JQUERY</div><div class="chip">JSON</div><div class="chip">XML</div>
+            <div class="chip">ANGULAR</div><div class="chip">REACT.JS</div><div class="chip">PYTHON</div><div class="chip">RABBITMQ</div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div style="font-weight:950; font-size:18px;">Other Skills</div>
+          <div class="chips">
+            <div class="chip">LARAVEL</div><div class="chip">CODEIGNITER</div><div class="chip">WORDPRESS</div><div class="chip">GIT</div>
+            <div class="chip">AWS</div><div class="chip">AZURE</div><div class="chip">COMPOSER</div><div class="chip">JIRA</div>
+            <div class="chip">SCRUM</div><div class="chip">KANBAN</div><div class="chip">DOCKER</div><div class="chip">JENKINS</div>
+            <div class="chip">TERRAFORM</div><div class="chip">KUBERNETES</div><div class="chip">SERVICENOW</div><div class="chip">CONFLUENCE</div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div style="font-weight:950; font-size:18px;">Skill Set</div>
+          <div class="chips">
+            <div class="chip">Solution Architecture</div>
+            <div class="chip">Project Management</div>
+            <div class="chip">Software Architecture</div>
+            <div class="chip">Full Stack Development</div>
+            <div class="chip">Requirement Analysis</div>
+            <div class="chip">Database Migration</div>
+            <div class="chip">Documentation</div>
+            <div class="chip">Scrum Master</div>
+            <div class="chip">Team Management</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ctaRow" style="margin-top:22px">
+        <a class="cta ctaPrimary" href="contact.html" data-i18n="nav.contact">Contact</a>
+        <a class="cta" href="tel:+4917666145047" data-i18n="nav.callNow">Call Now</a>
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+</section>
+
+  <script src="assets/app.js"></script>
+
+<div id="footerMount"></div>
+<script src="assets/i18n.js"></script>
+<script src="assets/app.js"></script>
+<script>
+  (function(){
+    fetch('assets/footer.html', {cache:'no-store'})
+      .then(r=>r.text())
+      .then(html=>{
+        const m = document.getElementById('footerMount');
+        if(m){ m.innerHTML = html; }
+        if(window.__setLang){
+          const saved = localStorage.getItem('site_lang') || 'en';
+          window.__setLang(saved);
+        }
+      })
+      .catch(()=>{});
+  })();
+</script>
+
+</body></html>

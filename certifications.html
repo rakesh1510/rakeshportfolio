@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Certifications | Rakesh Prajapati — AWS, DevOps & Project Management</title>
+  <meta name="description" content="Professional certifications and training of Rakesh Prajapati including AWS Solutions Architect, DevOps Foundation, Project Management and Full-Stack PHP Development.">
+  <meta name="keywords" content="Rakesh Prajapati Certifications, AWS Solutions Architect, DevOps Foundation, PMP, Full Stack PHP Developer, Project Management">
+  <meta name="author" content="Rakesh Prajapati">
+  <link rel="canonical" href="https://rakeshprajapati.de/certifications.html">
+
+  <meta property="og:title" content="Certifications | Rakesh Prajapati">
+  <meta property="og:description" content="AWS, DevOps, Project Management and Full-Stack Development certifications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rakeshprajapati.de/certifications.html">
+
+  <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    body{
+      background:
+        radial-gradient(circle at top left, rgba(37,99,235,.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(124,58,237,.12), transparent 30%),
+        linear-gradient(180deg,#f8fbff,#eef4ff);
+      color:#0f172a;
+    }
+
+    .cert-hero{
+      padding:70px 0 35px;
+    }
+
+    .cert-hero-card{
+      padding:44px;
+      border-radius:34px;
+      background:#fff;
+      border:1px solid #e5e7eb;
+      box-shadow:0 24px 70px rgba(15,23,42,.10);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .cert-hero-card:before{
+      content:"";
+      position:absolute;
+      right:-90px;
+      top:-90px;
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      background:linear-gradient(135deg,rgba(37,99,235,.22),rgba(124,58,237,.18));
+    }
+
+    .cert-hero-card > *{
+      position:relative;
+      z-index:1;
+    }
+
+    .cert-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:9px 16px;
+      border-radius:999px;
+      background:#ede9fe;
+      color:#6d28d9;
+      font-weight:950;
+      margin-bottom:16px;
+    }
+
+    .cert-title{
+      font-size:clamp(38px,5vw,64px);
+      line-height:1.02;
+      letter-spacing:-2px;
+      margin:0 0 16px;
+      color:#0f172a;
+    }
+
+    .cert-title span{
+      background:linear-gradient(135deg,#2563eb,#7c3aed);
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+
+    .cert-sub{
+      color:#475569;
+      font-size:18px;
+      line-height:1.75;
+      max-width:900px;
+    }
+
+    .cert-stats{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+      margin-top:28px;
+    }
+
+    .cert-stat{
+      padding:18px;
+      border-radius:22px;
+      background:#f8fafc;
+      border:1px solid #e5e7eb;
+    }
+
+    .cert-stat strong{
+      display:block;
+      font-size:28px;
+      color:#0f172a;
+      margin-bottom:5px;
+    }
+
+    .cert-stat span{
+      color:#64748b;
+      font-weight:800;
+      font-size:14px;
+    }
+
+    .section-cert{
+      padding:38px 0 60px;
+    }
+
+    .cert-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+    }
+
+    .cert-card{
+      padding:30px;
+      border-radius:32px;
+      background:#fff;
+      border:1px solid #e5e7eb;
+      box-shadow:0 18px 55px rgba(15,23,42,.08);
+      transition:.25s;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .cert-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 28px 80px rgba(15,23,42,.14);
+    }
+
+    .cert-card:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg,rgba(37,99,235,.06),rgba(124,58,237,.04));
+      opacity:0;
+      transition:.25s;
+    }
+
+    .cert-card:hover:before{
+      opacity:1;
+    }
+
+    .cert-card > *{
+      position:relative;
+      z-index:1;
+    }
+
+    .cert-head{
+      display:flex;
+      align-items:flex-start;
+      gap:16px;
+      margin-bottom:18px;
+    }
+
+    .cert-icon{
+      width:58px;
+      height:58px;
+      border-radius:20px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,#dbeafe,#ede9fe);
+      font-size:28px;
+      flex:0 0 auto;
+    }
+
+    .cert-card h2{
+      margin:0 0 8px;
+      font-size:24px;
+      color:#0f172a;
+      font-weight:950;
+      line-height:1.2;
+    }
+
+    .cert-period{
+      display:inline-flex;
+      padding:8px 12px;
+      border-radius:999px;
+      background:#f1f5f9;
+      color:#475569;
+      font-weight:850;
+      font-size:13px;
+    }
+
+    .cert-card p{
+      color:#475569;
+      line-height:1.7;
+      margin:0 0 16px;
+    }
+
+    .cert-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .cert-tags span{
+      padding:9px 13px;
+      border-radius:999px;
+      background:#f8fafc;
+      color:#334155;
+      border:1px solid #e2e8f0;
+      font-weight:850;
+      font-size:14px;
+      transition:.2s;
+    }
+
+    .cert-tags span:hover{
+      background:#dbeafe;
+      color:#1d4ed8;
+      transform:translateY(-2px);
+    }
+
+    .trust-panel{
+      margin-top:30px;
+      padding:34px;
+      border-radius:32px;
+      background:#fff;
+      border:1px solid #e5e7eb;
+      box-shadow:0 18px 55px rgba(15,23,42,.08);
+      display:grid;
+      grid-template-columns:.8fr 1.2fr;
+      gap:24px;
+      align-items:center;
+    }
+
+    .trust-panel h2{
+      margin:0 0 10px;
+      color:#0f172a;
+      font-size:30px;
+      font-weight:950;
+    }
+
+    .trust-panel p{
+      color:#64748b;
+      line-height:1.7;
+      margin:0;
+    }
+
+    .trust-list{
+      display:grid;
+      gap:12px;
+    }
+
+    .trust-item{
+      padding:15px 16px;
+      border-radius:20px;
+      background:#f8fafc;
+      border:1px solid #e5e7eb;
+      color:#334155;
+      font-weight:850;
+    }
+
+    .cta-panel{
+      margin-top:30px;
+      padding:34px;
+      border-radius:32px;
+      background:linear-gradient(135deg,#0f172a,#1d4ed8);
+      color:#fff;
+      text-align:center;
+      box-shadow:0 22px 70px rgba(15,23,42,.18);
+    }
+
+    .cta-panel h2{
+      margin:0 0 10px;
+      font-size:32px;
+    }
+
+    .cta-panel p{
+      color:#dbeafe;
+      max-width:760px;
+      margin:0 auto 22px;
+      line-height:1.7;
+    }
+
+    .ctaRow{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:13px 18px;
+      border-radius:999px;
+      background:#fff;
+      color:#0f172a;
+      border:1px solid #e5e7eb;
+      font-weight:950;
+      transition:.25s;
+      box-shadow:0 10px 30px rgba(15,23,42,.06);
+    }
+
+    .cta:hover{
+      transform:translateY(-3px);
+      box-shadow:0 18px 45px rgba(15,23,42,.12);
+    }
+
+    .ctaPrimary{
+      color:#fff;
+      border:0;
+      background:linear-gradient(135deg,#2563eb,#7c3aed);
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(24px);
+      transition:opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.show{
+      opacity:1;
+      transform:none;
+    }
+
+    @media(max-width:900px){
+      .cert-stats,
+      .cert-grid,
+      .trust-panel{
+        grid-template-columns:1fr;
+      }
+
+      .cert-hero-card,
+      .cert-card,
+      .trust-panel,
+      .cta-panel{
+        padding:26px;
+      }
+
+      .cert-title{
+        letter-spacing:-1px;
+      }
+    }
+                /* ===== FIX MENU DESIGN ===== */
+            @media (max-width: 900px) {
+                .nav.mobile-open {
+                    position: fixed;
+                    top: 20px;
+                    left: 16px;
+                    right: 16px;
+                    border-radius: 28px;
+                    padding: 28px 22px;
+                    background: rgba(255,255,255,0.97);
+                    box-shadow: 0 25px 70px rgba(15,23,42,.18);
+                    z-index: 100000;
+                }
+
+                .nav.mobile-open .menu {
+                    display: flex !important;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 18px;
+                    margin-top: 20px;
+                    border-top: 1px solid #e5e7eb;
+                    padding-top: 20px;
+                }
+
+                .nav.mobile-open .navlink {
+                    font-size: 20px;
+                    font-weight: 800;
+                    color: #64748b;
+                    text-align: center;
+                }
+
+                .nav.mobile-open .actions {
+                    display: flex !important;
+                    flex-direction: column;
+                    gap: 12px;
+                    margin-top: 20px;
+                }
+
+                .nav.mobile-open .btn {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            /* ===== PREVENT FLOAT BUTTON OVERLAP ===== */
+            .whatsapp-float,
+            .call-float {
+                z-index: 10 !important;
+            }
+    /* ===== FINAL CLEAN MOBILE MENU ===== */
+
+/* BUTTON */
+.menu-toggle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background: rgba(255,255,255,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(15,23,42,.08);
+  backdrop-filter: blur(8px);
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  width: 22px;
+  height: 2px;
+  background: #0f172a;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* ANIMATION */
+.nav.mobile-open .menu-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav.mobile-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+.nav.mobile-open .menu-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu,
+  .actions {
+    display: none;
+  }
+
+  .nav.mobile-open {
+    position: fixed;
+    top: 20px;
+    left: 16px;
+    right: 16px;
+    border-radius: 28px;
+    padding: 26px;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 25px 70px rgba(15,23,42,.18);
+    z-index: 1000;
+  }
+
+  .nav.mobile-open .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav.mobile-open .navlink {
+    font-size: 20px;
+    font-weight: 800;
+    color: #64748b;
+    text-align: center;
+  }
+
+  .nav.mobile-open .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .nav.mobile-open .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 901px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .actions {
+    display: flex;
+  }
+}            /* FINAL BEAUTIFUL MOBILE MENU */
+            @media (max-width: 900px) {
+                .nav.mobile-open {
+                    position: fixed !important;
+                    top: 24px !important;
+                    left: 16px !important;
+                    right: 16px !important;
+                    width: auto !important;
+                    max-height: calc(100vh - 48px);
+                    overflow-y: auto;
+
+                    display: grid !important;
+                    grid-template-columns: 1fr auto !important;
+                    align-items: center !important;
+
+                    padding: 42px 32px !important;
+                    border-radius: 32px !important;
+                    background: rgba(255,255,255,.97) !important;
+                    box-shadow: 0 22px 70px rgba(15,23,42,.18) !important;
+                    z-index: 100000 !important;
+                }
+
+                .nav.mobile-open .brand {
+                    grid-column: 1 !important;
+                    grid-row: 1 !important;
+                    font-size: 30px !important;
+                    line-height: 1 !important;
+                }
+
+                .nav.mobile-open .menu-toggle {
+                    grid-column: 2 !important;
+                    grid-row: 1 !important;
+                    width: 58px !important;
+                    height: 58px !important;
+                    border-radius: 50% !important;
+                    font-size: 30px !important;
+                }
+
+                .nav.mobile-open .menu {
+                    grid-column: 1 / -1 !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    align-items: center !important;
+                    gap: 22px !important;
+
+                    width: 100% !important;
+                    margin: 34px 0 24px !important;
+                    padding: 30px 0 0 !important;
+                    border-top: 1px solid #e5e7eb !important;
+
+                    overflow: visible !important;
+                }
+
+                .nav.mobile-open .navlink {
+                    display: block !important;
+                    width: 100% !important;
+                    max-width: 100% !important;
+
+                    text-align: center !important;
+                    font-size: 22px !important;
+                    font-weight: 900 !important;
+                    line-height: 1.25 !important;
+                    color: #64748b !important;
+
+                    white-space: normal !important;
+                    word-break: normal !important;
+                }
+
+                .nav.mobile-open .actions {
+                    grid-column: 1 / -1 !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    gap: 14px !important;
+                    width: 100% !important;
+                }
+
+                .nav.mobile-open .actions .btn,
+                .nav.mobile-open .actions a,
+                .nav.mobile-open .actions button {
+                    width: 100% !important;
+                    min-height: 58px !important;
+                    border-radius: 999px !important;
+                    justify-content: center !important;
+                    text-align: center !important;
+                    font-size: 18px !important;
+                    font-weight: 900 !important;
+                }
+            }
+            /* ===== FINAL MOBILE MENU BUTTON ===== */
+            .menu-toggle {
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                border: 1px solid #e5e7eb;
+                background: rgba(255,255,255,0.9);
+                display: none;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+                box-shadow: 0 10px 30px rgba(15,23,42,.08);
+                backdrop-filter: blur(8px);
+                z-index: 100001;
+            }
+
+            .menu-toggle span {
+                width: 22px;
+                height: 2px;
+                background: #0f172a;
+                border-radius: 2px;
+                transition: 0.3s ease;
+            }
+
+            /* ANIMATION → X */
+            .nav.mobile-open .menu-toggle span:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            .nav.mobile-open .menu-toggle span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav.mobile-open .menu-toggle span:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
+
+            /* MOBILE ONLY */
+            @media (max-width: 900px) {
+                .menu-toggle {
+                    display: flex !important;
+                }
+            }
+
+            /* ===== FIX MENU DESIGN ===== */
+            @media (max-width: 900px) {
+                .nav.mobile-open {
+                    position: fixed;
+                    top: 20px;
+                    left: 16px;
+                    right: 16px;
+                    border-radius: 28px;
+                    padding: 28px 22px;
+                    background: rgba(255,255,255,0.97);
+                    box-shadow: 0 25px 70px rgba(15,23,42,.18);
+                    z-index: 100000;
+                }
+
+                .nav.mobile-open .menu {
+                    display: flex !important;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 18px;
+                    margin-top: 20px;
+                    border-top: 1px solid #e5e7eb;
+                    padding-top: 20px;
+                }
+
+                .nav.mobile-open .navlink {
+                    font-size: 20px;
+                    font-weight: 800;
+                    color: #64748b;
+                    text-align: center;
+                }
+
+                .nav.mobile-open .actions {
+                    display: flex !important;
+                    flex-direction: column;
+                    gap: 12px;
+                    margin-top: 20px;
+                }
+
+                .nav.mobile-open .btn {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            /* ===== PREVENT FLOAT BUTTON OVERLAP ===== */
+            .whatsapp-float,
+            .call-float {
+                z-index: 10 !important;
+            }
+            /* ===== FINAL CLEAN MOBILE MENU ===== */
+
+/* BUTTON */
+.menu-toggle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background: rgba(255,255,255,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(15,23,42,.08);
+  backdrop-filter: blur(8px);
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  width: 22px;
+  height: 2px;
+  background: #0f172a;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* ANIMATION */
+.nav.mobile-open .menu-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav.mobile-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+.nav.mobile-open .menu-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu,
+  .actions {
+    display: none;
+  }
+
+  .nav.mobile-open {
+    position: fixed;
+    top: 20px;
+    left: 16px;
+    right: 16px;
+    border-radius: 28px;
+    padding: 26px;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 25px 70px rgba(15,23,42,.18);
+    z-index: 1000;
+  }
+
+  .nav.mobile-open .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav.mobile-open .navlink {
+    font-size: 20px;
+    font-weight: 800;
+    color: #64748b;
+    text-align: center;
+  }
+
+  .nav.mobile-open .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .nav.mobile-open .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 901px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .actions {
+    display: flex;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+<div class="container navWrap">
+            <div class="nav" id="mainNav">
+    <a class="brand" href="index.html">Portfolio.</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+    <div class="menu">
+      <a href="experience.html" class="navlink" data-i18n="nav.experience">Experience</a>
+      <a href="value.html" class="navlink" data-i18n="nav.value">Why Hire Me</a>
+      <a href="skills.html" class="navlink" data-i18n="nav.skills">Skills</a>
+      <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+      <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+      <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
+      <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+    </div>
+
+    <div class="actions">
+        <button class="btn" type="button" id="langToggle">DE</button>
+        <a class="btn btnPrimary" href="tel:+4917666145047" data-i18n="nav.callNow">Call Now</a>
+      </div>
+  </div>
+</div>
+
+  <section class="cert-hero">
+    <div class="container">
+      <div class="cert-hero-card reveal">
+        <div class="cert-badge" data-i18n="cert.badge">🏅 Certifications & Professional Training</div>
+
+        <h1 class="cert-title" data-i18n="cert.title">
+          Verified learning across <span>cloud, DevOps and project delivery.</span>
+        </h1>
+
+        <p class="cert-sub" data-i18n="cert.subtitle">
+          My certifications support my practical experience in software architecture, cloud-ready systems, DevOps practices, full-stack development and structured project management.
+        </p>
+
+        <div class="cert-stats">
+          <div class="cert-stat">
+            <strong>4</strong>
+            <span data-i18n="cert.stat.key">Key Certifications</span>
+          </div>
+
+          <div class="cert-stat">
+            <strong>AWS</strong>
+            <span data-i18n="cert.stat.cloud">Cloud Architecture</span>
+          </div>
+
+          <div class="cert-stat">
+            <strong>DevOps</strong>
+            <span data-i18n="cert.stat.deliveryPractices">Delivery Practices</span>
+          </div>
+
+          <div class="cert-stat">
+            <strong>PMP</strong>
+            <span data-i18n="cert.stat.projectManagement">Project Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-cert">
+    <div class="container">
+
+      <div class="cert-grid">
+        <article class="cert-card reveal">
+          <div class="cert-head">
+            <div class="cert-icon">☁️</div>
+            <div>
+              <h2 data-i18n="cert.aws.title">AWS Certified Solutions Architect</h2>
+              <span class="cert-period" data-i18n="cert.aws.period">Mar 2021 – Nov 2021</span>
+            </div>
+          </div>
+
+          <p data-i18n="cert.aws.text">
+            Cloud architecture certification focused on designing scalable, secure and reliable AWS-based systems.
+          </p>
+
+          <div class="cert-tags">
+            <span>AWS</span>
+            <span data-i18n="cert.stat.cloud">Cloud Architecture</span>
+            <span data-i18n="cert.tag.scalability">Scalability</span>
+            <span data-i18n="cert.tag.security">Security</span>
+            <span data-i18n="cert.tag.infrastructure">Infrastructure</span>
+          </div>
+        </article>
+
+        <article class="cert-card reveal">
+          <div class="cert-head">
+            <div class="cert-icon">⚙️</div>
+            <div>
+              <h2 data-i18n="cert.devops.title">DevOps Foundation Certification</h2>
+              <span class="cert-period" data-i18n="cert.devops.period">Dec 2021 – Oct 2022</span>
+            </div>
+          </div>
+
+          <p data-i18n="cert.devops.text">
+            Professional training in DevOps principles, CI/CD mindset, collaboration, automation and reliable software delivery.
+          </p>
+
+          <div class="cert-tags">
+            <span>DevOps</span>
+            <span>CI/CD</span>
+            <span data-i18n="cert.tag.automation">Automation</span>
+            <span data-i18n="cert.tag.monitoring">Monitoring</span>
+            <span data-i18n="cert.tag.releaseProcess">Release Process</span>
+          </div>
+        </article>
+
+        <article class="cert-card reveal">
+          <div class="cert-head">
+            <div class="cert-icon">📊</div>
+            <div>
+              <h2 data-i18n="cert.pmp.title">Project Management Professional</h2>
+              <span class="cert-period" data-i18n="cert.pmp.period">Sep 2024 – Nov 2024</span>
+            </div>
+          </div>
+
+          <p data-i18n="cert.pmp.text">
+            Project management training focused on planning, scope control, risk management, stakeholder communication and delivery ownership.
+          </p>
+
+          <div class="cert-tags">
+            <span data-i18n="cert.stat.projectManagement">Project Management</span>
+            <span data-i18n="cert.tag.stakeholders">Stakeholders</span>
+            <span data-i18n="cert.tag.planning">Planning</span>
+            <span data-i18n="cert.tag.riskManagement">Risk Management</span>
+            <span data-i18n="cert.tag.delivery">Delivery</span>
+          </div>
+        </article>
+
+        <article class="cert-card reveal">
+          <div class="cert-head">
+            <div class="cert-icon">💻</div>
+            <div>
+              <h2 data-i18n="cert.fullstack.title">Full-Stack Development — PHP</h2>
+              <span class="cert-period" data-i18n="cert.fullstack.period">Professional Training</span>
+            </div>
+          </div>
+
+          <p data-i18n="cert.fullstack.text">
+            Full-stack development training focused on PHP, web applications, databases, frontend integration and production-ready software delivery.
+          </p>
+
+          <div class="cert-tags">
+            <span>PHP</span>
+            <span data-i18n="cert.tag.fullstack">Full-Stack</span>
+            <span>MySQL</span>
+            <span data-i18n="cert.tag.webDevelopment">Web Development</span>
+            <span data-i18n="cert.tag.backend">Backend</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="trust-panel reveal">
+        <div>
+          <h2 data-i18n="cert.support.title">How these certifications support my work</h2>
+          <p data-i18n="cert.support.text">
+            Certifications are valuable when they are applied in real projects. I combine these credentials with 12+ years of hands-on software engineering and enterprise delivery experience.
+          </p>
+        </div>
+
+        <div class="trust-list">
+          <div class="trust-item" data-i18n="cert.support.r1">✅ Better architecture decisions for cloud-ready systems</div>
+          <div class="trust-item" data-i18n="cert.support.r2">✅ Stronger release, automation and DevOps mindset</div>
+          <div class="trust-item" data-i18n="cert.support.r3">✅ Structured planning, risk handling and stakeholder communication</div>
+          <div class="trust-item" data-i18n="cert.support.r4">✅ Practical full-stack implementation experience</div>
+        </div>
+      </div>
+
+      <div class="cta-panel reveal">
+        <h2 data-i18n="cert.cta.title">Looking for certified experience with practical delivery?</h2>
+        <p data-i18n="cert.cta.text">
+          I bring technical certifications, hands-on engineering depth and project leadership experience to build reliable software systems.
+        </p>
+
+        <div class="ctaRow">
+          <a class="cta ctaPrimary" href="contact.html" data-i18n="common.contactMe">Contact Me</a>
+          <a class="cta" href="documents.html" data-i18n="common.viewDocuments">View Documents</a>
+          <a class="cta" href="experience.html" data-i18n="common.seeExperience">See Experience</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footerMount"></div>
+
+  <script src="assets/i18n.js"></script>
+  <script src="assets/app.js"></script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+                const nav = document.getElementById('mainNav');
+                const toggle = document.getElementById('menuToggle');
+
+                if (nav && toggle) {
+                    toggle.addEventListener('click', function () {
+                        nav.classList.toggle('mobile-open');
+                    });
+                }
+            });
+
+    const revealItems = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealItems.forEach(function(item){
+      observer.observe(item);
+    });
+
+    fetch('assets/footer.html', {cache:'no-store'})
+      .then(function(response){ return response.text(); })
+      .then(function(html){
+        const footerMount = document.getElementById('footerMount');
+        if(footerMount){ footerMount.innerHTML = html; }
+
+        if(window.__setLang){
+          const saved = localStorage.getItem('site_lang') || 'en';
+          window.__setLang(saved);
+        }
+      })
+      .catch(function(){});
+  </script>
+
+</body>
+</html>

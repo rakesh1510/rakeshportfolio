@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Experience — Rakesh Prajapati</title>
+  <meta name="description" content="Work experience in project management, software architecture and full-stack engineering across enterprise-grade platforms.">
+  <meta name="keywords" content="Project Manager, Software Architect, Senior Software Engineer, Scrum Master, PHP, Laravel, AWS, DevOps, Jira">
+  <meta property="og:title" content="Experience — Rakesh Prajapati">
+  <meta property="og:description" content="Work experience in project management, software architecture and full-stack engineering across enterprise-grade platforms.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Rakesh Prajapati","jobTitle":"Project Manager / Senior Software Engineer / Software Architect","email":"mailto:rp151090@gmail.com","telephone":"+49 17666145047","address":{"@type":"PostalAddress","addressLocality":"Heilbronn","addressRegion":"Baden-Württemberg","addressCountry":"DE"},"sameAs":["https://www.linkedin.com/in/rakesh-prajapati-83124238"]}
+  </script>
+</head>
+
+<body>
+  <div class="container navWrap">
+    <div class="nav">
+      <a class="brand" href="index.html">Portfolio.</a>
+
+      <div class="menu">
+        <a href="experience.html" class="navlink active" data-i18n="nav.experience">Experience</a>
+        <a href="value.html" class="navlink" data-i18n="nav.value">Why Hire Me</a>
+        <a href="skills.html" class="navlink" data-i18n="nav.skills">Skills</a>
+        <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+        <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+        <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
+        <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="actions">
+        <button class="btn" type="button" id="langToggle">DE</button>
+
+        <button class="hamburger" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <a class="btn btnPrimary" href="contact.html" data-i18n="nav.letsTalk">Let's Talk</a>
+      </div>
+
+      <div class="mobileMenu">
+        <a href="experience.html" class="navlink active" data-i18n="nav.experience">Experience</a>
+        <a href="value.html" class="navlink" data-i18n="nav.value">Why Hire Me</a>
+        <a href="skills.html" class="navlink" data-i18n="nav.skills">Skills</a>
+        <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+        <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+        <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
+        <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="pillRow">
+      <div class="pill"><span class="dot"></span> <span data-i18n="pill.available">Available for opportunities</span></div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <div class="sectionIcon">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M10 7V5a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="2"/>
+            <path d="M4 7h16v14a2 2 0 0 1-2 2H6a2 0 0 1-2-2V7z" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <h2 class="sectionTitle">Experience</h2>
+          <div class="sectionSub">Roles · responsibilities · projects · technologies</div>
+        </div>
+      </div>
+
+      <div style="height:18px"></div>
+
+      <!-- FAST -->
+      <div class="card reveal">
+        <div class="roleTop">
+          <div>
+            <div class="roleTitle">Software Architect / Project Manager (IT)</div>
+            <div class="company">F.A.S.T. GmbH</div>
+          </div>
+          <div class="metaRight">
+            <span>Jan 2024 – Present</span>
+            <span>Stuttgart, Baden-Württemberg, Germany</span>
+          </div>
+        </div>
+
+        <div class="desc" style="margin-top:12px">
+          <b>Project:</b> Water Cloud (Watercloud) — Map-based platform for managing and visualizing AZ logger data (import, processing, districts/overlays, multilingual UI, backup/restore).
+        </div>
+
+        <div class="desc" style="margin-top:12px"><b>Responsibilities</b></div>
+        <ul class="kvList">
+          <li>Documentation, module development, and database design/architecture.</li>
+          <li>Managed a team of 12 employees; ensured delivery progress and quality.</li>
+          <li>Researched, designed, implemented, and managed software programs; tested and evaluated new solutions.</li>
+          <li>Identified enhancement areas; implemented modifications; wrote efficient, maintainable code.</li>
+          <li>Developed QA procedures; deployed tools, processes, and metrics.</li>
+          <li>Maintained and upgraded existing systems; ensured stability and operability.</li>
+          <li>Conducted client consultations for business/technical requirements and translated them into solutions.</li>
+          <li>Architected scalable systems, selected appropriate technologies, and led complex integrations.</li>
+          <li>Created/maintained project plans; ensured timelines/budgets; coordinated cross-functional teams.</li>
+          <li>Conducted code reviews and ensured compliance with standards and best practices.</li>
+          <li>Diagnosed and resolved complex technical issues; sustained high client satisfaction.</li>
+        </ul>
+
+        <div class="desc" style="margin-top:12px"><b>Technology</b></div>
+        <div class="chips" style="margin-top:10px">
+          <div class="chip">PHP</div><div class="chip">Joomla</div><div class="chip">Shell Script</div><div class="chip">Python</div>
+          <div class="chip">HTML</div><div class="chip">CSS</div><div class="chip">JavaScript</div><div class="chip">AJAX</div>
+          <div class="chip">MySQL</div><div class="chip">RabbitMQ</div><div class="chip">Composer</div>
+          <div class="chip">AWS</div><div class="chip">Linux</div><div class="chip">Git</div>
+          <div class="chip">Jira</div><div class="chip">Trello</div><div class="chip">ServiceNow</div><div class="chip">Confluence</div>
+        </div>
+      </div>
+
+      <!-- LTI -->
+      <div class="card reveal">
+        <div class="roleTop">
+          <div>
+            <div class="roleTitle">Senior Software Engineer</div>
+            <div class="company">Larsen &amp; Toubro Infotech Ltd.</div>
+          </div>
+          <div class="metaRight">
+            <span>Sep 2018 – May 2023</span>
+            <span>Berlin, Germany</span>
+          </div>
+        </div>
+
+        <div class="desc" style="margin-top:12px"><b>Projects</b></div>
+        <ul class="kvList">
+          <li><b>MVI (Music Video Ingestion)</b> — Client: <b>Netflix &amp; Paramount</b></li>
+          <li><b>Bellator MMA</b> — Client: Viacom &amp; Paramount</li>
+          <li><b>MARIA</b> — Client: Viacom</li>
+        </ul>
+
+        <div class="desc" style="margin-top:12px"><b>Responsibilities</b></div>
+        <ul class="kvList">
+          <li>Documentation, module development, and database design.</li>
+          <li>Managed teams of up to 18 employees; ensured progress, delivery quality, and stakeholder alignment.</li>
+          <li>Worked with major clients including <b>Netflix, Paramount, Sony, and Viacom</b>.</li>
+          <li>Researched, designed, implemented, and maintained scalable software programs.</li>
+          <li>Testing and evaluation; operational practicality assessment.</li>
+          <li>Implemented enhancements and modifications; wrote efficient code and maintained standards.</li>
+          <li>Developed QA procedures; deployed tools/processes/metrics; maintained and upgraded systems.</li>
+          <li>Trained users and supported cross-functional collaboration (dev, UX, analysts, business, systems).</li>
+        </ul>
+
+        <div class="desc" style="margin-top:12px"><b>Technology</b></div>
+        <div class="chips" style="margin-top:10px">
+          <div class="chip">PHP</div><div class="chip">Laravel</div><div class="chip">MySQL</div>
+          <div class="chip">Python</div><div class="chip">Shell Script</div><div class="chip">RabbitMQ</div>
+          <div class="chip">JavaScript</div><div class="chip">AJAX</div><div class="chip">HTML</div><div class="chip">CSS</div>
+          <div class="chip">Docker</div><div class="chip">Git</div><div class="chip">GitHub Actions</div>
+          <div class="chip">AWS</div><div class="chip">Linux</div>
+          <div class="chip">Jira</div>
+        </div>
+      </div>
+
+      <!-- Saint-Gobain -->
+      <div class="card reveal">
+        <div class="roleTop">
+          <div>
+            <div class="roleTitle">Senior Software Engineer</div>
+            <div class="company">Client: Saint-Gobain</div>
+          </div>
+          <div class="metaRight">
+            <span>Aug 2016 – Sep 2018</span>
+            <span>India</span>
+          </div>
+        </div>
+
+        <div class="desc" style="margin-top:12px"><b>Projects</b></div>
+        <ul class="kvList">
+          <li><b>SOC (Security Operations Center)</b></li>
+          <li><b>IGreen-Watch</b></li>
+          <li><b>AVAT</b></li>
+        </ul>
+
+        <div class="desc" style="margin-top:12px"><b>Responsibilities</b></div>
+        <ul class="kvList">
+          <li>Researched, designed, implemented, and maintained software programs.</li>
+          <li>Testing/evaluation; implemented enhancements; ensured operational practicality.</li>
+          <li>Developed QA procedures; deployed tools/processes/metrics; maintained and upgraded systems.</li>
+          <li>Trained users and collaborated with developers, UX designers, business and systems analysts.</li>
+        </ul>
+
+        <div class="desc" style="margin-top:12px"><b>Technology</b></div>
+        <div class="chips" style="margin-top:10px">
+          <div class="chip">Angular</div><div class="chip">React.js</div>
+          <div class="chip">PHP</div><div class="chip">Laravel</div><div class="chip">MySQL</div><div class="chip">Redis</div>
+          <div class="chip">Shell Script</div><div class="chip">JavaScript</div><div class="chip">AJAX</div>
+          <div class="chip">HTML</div><div class="chip">CSS</div>
+          <div class="chip">Linux</div>
+        </div>
+      </div>
+
+      <!-- Route Mobile -->
+      <div class="card reveal">
+        <div class="roleTop">
+          <div>
+            <div class="roleTitle">Senior Software Programmer</div>
+            <div class="company">Route Mobile Ltd.</div>
+          </div>
+          <div class="metaRight">
+            <span>Jul 2014 – Jul 2016</span>
+            <span>India</span>
+          </div>
+        </div>
+
+        <div class="desc" style="margin-top:12px"><b>Projects</b></div>
+        <ul class="kvList">
+          <li><b>E-ticket System</b></li>
+          <li><b>Distributor / Reseller / Web-client Portal</b></li>
+          <li><b>E-commerce (Online Shop)</b></li>
+          <li><b>Corporate Website:</b> routemobile.com</li>
+        </ul>
+
+        <div class="desc" style="margin-top:12px"><b>Responsibilities</b></div>
+        <ul class="kvList">
+          <li>Developed and maintained multiple PHP-based web applications and portals.</li>
+          <li>Implemented backend logic, UI workflows, and database integrations.</li>
+          <li>Worked closely with developers, clients, UX designers, and analysts.</li>
+          <li>Supported deployments, upgrades, and production maintenance.</li>
+        </ul>
+
+        <div class="desc" style="margin-top:12px"><b>Technology</b></div>
+        <div class="chips" style="margin-top:10px">
+          <div class="chip">PHP</div><div class="chip">MySQL</div><div class="chip">JavaScript</div><div class="chip">AJAX</div>
+          <div class="chip">HTML</div><div class="chip">CSS</div><div class="chip">Linux</div><div class="chip">Redis</div>
+          <div class="chip">WordPress</div>
+        </div>
+      </div>
+
+      <!-- Ness -->
+      <div class="card reveal">
+        <div class="roleTop">
+          <div>
+            <div class="roleTitle">Software Engineer / Developer</div>
+            <div class="company">Client: Ness Technologies</div>
+          </div>
+          <div class="metaRight">
+            <span>Feb 2014 – May 2014</span>
+            <span>India</span>
+          </div>
+        </div>
+
+        <div class="desc" style="margin-top:12px">
+          <b>Project:</b> Pearson QTI
+        </div>
+
+        <div class="desc" style="margin-top:12px"><b>Responsibilities</b></div>
+        <ul class="kvList">
+          <li>Researched, implemented, and managed software components.</li>
+          <li>Documentation, module development, and database designs.</li>
+          <li>Determined operational practicality and supported delivery.</li>
+        </ul>
+
+        <div class="desc" style="margin-top:12px"><b>Technology</b></div>
+        <div class="chips" style="margin-top:10px">
+          <div class="chip">XML</div><div class="chip">HTML</div><div class="chip">HTML5</div>
+          <div class="chip">CSS</div><div class="chip">CSS3</div>
+          <div class="chip">JavaScript</div><div class="chip">jQuery</div>
+        </div>
+      </div>
+
+      <!-- Infinitech -->
+      <div class="card reveal">
+        <div class="roleTop">
+          <div>
+            <div class="roleTitle">Software Engineer / Developer Trainee</div>
+            <div class="company">Infinitech</div>
+          </div>
+          <div class="metaRight">
+            <span>Oct 2013 – Jan 2014</span>
+            <span>India</span>
+          </div>
+        </div>
+
+        <div class="desc" style="margin-top:12px">
+          <b>Scope:</b> Hands-on development across PHP projects using CodeIgniter/WordPress with HTML/CSS/JS and MySQL.
+        </div>
+
+        <div class="desc" style="margin-top:12px"><b>Technology</b></div>
+        <div class="chips" style="margin-top:10px">
+          <div class="chip">PHP</div><div class="chip">CodeIgniter</div><div class="chip">WordPress</div>
+          <div class="chip">HTML</div><div class="chip">HTML5</div>
+          <div class="chip">CSS</div><div class="chip">CSS3</div>
+          <div class="chip">JavaScript</div><div class="chip">jQuery</div>
+          <div class="chip">MySQL</div>
+        </div>
+      </div>
+
+      <div class="ctaRow" style="margin-top:22px">
+        <a class="cta ctaPrimary" href="assets/Rakesh_Prajapati_CV.pdf" download>Download CV</a>
+        <a class="cta" href="assets/Rakesh_Prajapati_Cover_Letter.pdf" download>Download Cover Letter</a>
+        <a class="cta" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footerMount"></div>
+
+  <!-- Load i18n first, then app.js once -->
+  <script src="assets/i18n.js"></script>
+  <script src="assets/app.js"></script>
+
+  <script>
+    (function(){
+      fetch('assets/footer.html', {cache:'no-store'})
+        .then(r=>r.text())
+        .then(html=>{
+          const m = document.getElementById('footerMount');
+          if(m){ m.innerHTML = html; }
+          if(window.__setLang){
+            const saved = localStorage.getItem('site_lang') || 'en';
+            window.__setLang(saved);
+          }
+        })
+        .catch(()=>{});
+    })();
+  </script>
+</body>
+</html>

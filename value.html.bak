@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Why Hire Me — Rakesh Prajapati</title>
+  <meta name="description" content="Leadership, delivery ownership and architecture mindset. How I work and what I deliver for teams.">
+  <meta name="keywords" content="Project Manager, Software Architect, Senior Software Engineer, Scrum Master, PHP, Laravel, AWS, DevOps, Jira">
+  <meta property="og:title" content="Why Hire Me — Rakesh Prajapati">
+  <meta property="og:description" content="Leadership, delivery ownership and architecture mindset. How I work and what I deliver for teams.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Rakesh Prajapati","jobTitle":"Project Manager / Senior Software Engineer / Software Architect","email":"mailto:rp151090@gmail.com","telephone":"+49 17666145047","address":{"@type":"PostalAddress","addressLocality":"Heilbronn","addressRegion":"Baden-Württemberg","addressCountry":"DE"},"sameAs":["https://www.linkedin.com/in/rakesh-prajapati-83124238"]}
+  </script>
+</head>
+
+<body>
+  <div class="container navWrap">
+    <div class="nav">
+      <a class="brand" href="index.html">Portfolio.</a>
+
+      <div class="menu">
+        <a href="experience.html" class="navlink" data-i18n="nav.experience">Experience</a>
+        <a href="value.html" class="navlink active" data-i18n="nav.value">Why Hire Me</a>
+        <a href="skills.html" class="navlink" data-i18n="nav.skills">Skills</a>
+        <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+        <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+        <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
+        <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="actions">
+        <button class="btn" type="button" id="langToggle">DE</button>
+        <button class="hamburger" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <a class="btn btnPrimary" href="tel:+4917666145047" data-i18n="nav.callNow">Call Now</a>
+      </div>
+
+      <div class="mobileMenu">
+        <a href="experience.html" class="navlink" data-i18n="nav.experience">Experience</a>
+        <a href="value.html" class="navlink active" data-i18n="nav.value">Why Hire Me</a>
+        <a href="skills.html" class="navlink" data-i18n="nav.skills">Skills</a>
+        <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+        <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+        <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
+        <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="pillRow">
+      <div class="pill"><span class="dot"></span> Architecture · Delivery · Leadership</div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <div class="sectionIcon" style="background:#f3ecff; border-color: rgba(109,40,217,.10);">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l4 3v6a6 6 0 1 1-8 0V5l4-3z" stroke="currentColor" stroke-width="2"/>
+            <path d="M9 21l3-2 3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h2 class="sectionTitle">Why hire me</h2>
+          <div class="sectionSub">What you get when I join your team</div>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <!-- 1 -->
+        <div class="card reveal">
+          <div style="font-weight:950; font-size:20px;">1) Strong architecture decisions</div>
+          <div class="desc" style="margin-top:10px">
+            I translate business requirements into clean, scalable architecture—choosing the right trade-offs for
+            <b>performance, reliability, security, and maintainability</b>. I design modular systems (services, APIs, queues,
+            and data models) that teams can evolve safely over time.
+          </div>
+          <ul class="kvList" style="margin-top:10px">
+            <li>Architecture diagrams, data flow, and integration design (REST/SOAP, Web Services, RabbitMQ).</li>
+            <li>Database design & migration strategy (MySQL/MongoDB) with backward-compatible rollouts.</li>
+            <li>Scalability planning: caching, async processing, rate limits, and fault-tolerant patterns.</li>
+            <li>Clear standards: code structure, naming, error handling, logging, and API contracts.</li>
+          </ul>
+        </div>
+
+        <!-- 2 -->
+        <div class="card reveal">
+          <div style="font-weight:950; font-size:20px;">2) Delivery ownership end-to-end</div>
+          <div class="desc" style="margin-top:10px">
+            From estimation and sprint planning to QA gates and production support—<b>I own outcomes</b>.
+            I focus on shipping reliably with strong visibility for stakeholders.
+          </div>
+          <ul class="kvList" style="margin-top:10px">
+            <li>Effort estimation, milestone planning, sprint breakdown, and risk management.</li>
+            <li>Daily tracking in Jira (Scrum/Kanban), clear status updates, and release notes.</li>
+            <li>QA process: test plans, test cases, UAT support, bug triage, and regression cycles.</li>
+            <li>Production readiness: deployment checklists, rollback plans, and monitoring dashboards.</li>
+          </ul>
+        </div>
+
+        <!-- 3 -->
+        <div class="card reveal">
+          <div style="font-weight:950; font-size:20px;">3) Leadership + team enablement</div>
+          <div class="desc" style="margin-top:10px">
+            I’ve led teams up to <b>18 engineers</b>. I build strong engineering culture: code reviews, clean documentation,
+            predictable delivery, and collaborative problem solving.
+          </div>
+          <ul class="kvList" style="margin-top:10px">
+            <li>Code review process (quality, security, performance, readability, and maintainability).</li>
+            <li>Guidelines for clean coding, SOLID/OOP practices, and reusable components.</li>
+            <li>Mentoring: onboarding, pair programming, technical coaching, and knowledge sharing.</li>
+            <li>Definition of Done: testing, documentation, observability, and release validation.</li>
+          </ul>
+        </div>
+
+        <!-- 4 -->
+        <div class="card reveal">
+          <div style="font-weight:950; font-size:20px;">4) Enterprise client experience</div>
+          <div class="desc" style="margin-top:10px">
+            Experienced with major enterprise clients such as <b>Netflix, Paramount, Viacom, and Sony</b>.
+            I communicate clearly, handle priorities, and deliver solutions that satisfy both business stakeholders and
+            engineering standards.
+          </div>
+          <ul class="kvList" style="margin-top:10px">
+            <li>Requirements workshops, solution proposals, and clear technical communication.</li>
+            <li>Stakeholder management: aligning scope, timelines, and technical constraints.</li>
+            <li>Support & incident handling with root-cause analysis and preventive actions.</li>
+            <li>Documentation in Confluence and structured handovers for long-term maintainability.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="height:18px"></div>
+
+      <!-- How I work -->
+      <div class="card reveal">
+        <div style="font-weight:950; font-size:20px;">How I work (my approach)</div>
+
+        <div class="desc" style="margin-top:10px">
+          I follow a practical engineering process that balances speed, quality, and long-term stability.
+        </div>
+
+        <ul class="kvList" style="margin-top:10px">
+          <li><b>Clarify the goal:</b> Understand business outcomes, constraints (budget/timeline/compliance), and success metrics.</li>
+          <li><b>Architecture first:</b> Start with the simplest viable design; validate assumptions early; iterate using feedback and data.</li>
+          <li><b>Build with clean code:</b> Strong standards (OOP/SOLID), modular structure, readable code, and maintainable patterns.</li>
+          <li><b>Testing & QA:</b> Unit/integration tests where applicable, test plans, UAT support, and regression protection before release.</li>
+          <li><b>Release safely:</b> CI/CD mindset, staged deployments, feature toggles when needed, rollback plans, and release notes.</li>
+          <li><b>Operate reliably:</b> Logging, monitoring, alerting, incident response, and root-cause analysis to stabilize production.</li>
+          <li><b>Continuous improvement:</b> Performance tuning, refactoring, automation (scripts/jobs), and reducing operational cost.</li>
+        </ul>
+
+        <div class="chips" style="margin-top:12px">
+          <div class="chip">Clean Code</div>
+          <div class="chip">Code Reviews</div>
+          <div class="chip">Testing / QA</div>
+          <div class="chip">CI/CD Mindset</div>
+          <div class="chip">Monitoring</div>
+          <div class="chip">Incident Response</div>
+          <div class="chip">Performance Tuning</div>
+          <div class="chip">Refactoring</div>
+          <div class="chip">Automation</div>
+          <div class="chip">Documentation</div>
+        </div>
+
+        <div class="ctaRow" style="margin-top:16px">
+          <a class="cta ctaPrimary" href="contact.html" data-i18n="nav.contact">Contact</a>
+          <a class="cta" href="tel:+4917666145047" data-i18n="nav.callNow">Call Now</a>
+          <a class="cta" href="experience.html">See Experience</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footerMount"></div>
+
+  <!-- Load i18n first, then app.js once -->
+  <script src="assets/i18n.js"></script>
+  <script src="assets/app.js"></script>
+  <script>
+    (function(){
+      fetch('assets/footer.html', {cache:'no-store'})
+        .then(r=>r.text())
+        .then(html=>{
+          const m = document.getElementById('footerMount');
+          if(m){ m.innerHTML = html; }
+          if(window.__setLang){
+            const saved = localStorage.getItem('site_lang') || 'en';
+            window.__setLang(saved);
+          }
+        })
+        .catch(()=>{});
+    })();
+  </script>
+</body>
+</html>
