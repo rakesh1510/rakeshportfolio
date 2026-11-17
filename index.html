@@ -1,959 +1,1075 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="google-site-verification" content="_MlEjxOIbFamrFURpFTnCvheGzi6OoszpjJX03iKb7Q">
-
-  <title>Rakesh Prajapati | Senior Software Engineer & IT Project Manager Germany</title>
-  <meta name="description" content="Rakesh Prajapati is a Senior Software Engineer, PHP Developer, Software Architect and IT Project Manager based in Germany with 12+ years of experience in enterprise software development, SaaS platforms and scalable architecture.">
-  <meta name="keywords" content="Rakesh Prajapati, Senior Software Engineer Germany, PHP Developer Germany, IT Project Manager Germany, Software Architect Germany, Software Developer Germany">
-  <meta name="author" content="Rakesh Prajapati">
-
-  <link rel="canonical" href="https://rakeshprajapati.de/">
-  <link rel="profile" href="https://gmpg.org/xfn/11">
-  <link rel="me" href="https://www.linkedin.com/in/rakesh-prajapati-83124238">
-  <link rel="stylesheet" href="assets/style.css">
-
-<style>
-:root{
-  --ink:#111827;
-  --muted:#64748b;
-  --blue:#2563eb;
-  --sky:#38bdf8;
-  --purple:#7c3aed;
-  --soft:#f8fafc;
-  --line:#e5e7eb;
-  --dark:#0f172a;
-  --shadow:0 22px 70px rgba(15,23,42,.12);
-}
-
-body{
-  background:
-    radial-gradient(circle at top left, rgba(37,99,235,.14), transparent 28%),
-    radial-gradient(circle at top right, rgba(124,58,237,.12), transparent 30%),
-    linear-gradient(180deg,#f8fbff,#eef4ff);
-  color:#0f172a;
-}
-
-.navWrap{
-  position:sticky;
-  top:14px;
-  z-index:50;
-}
-
-.trust-hero{
-  padding:70px 0 30px;
-}
-
-.hero-pro{
-  display:grid;
-  grid-template-columns:1.15fr .85fr;
-  gap:34px;
-  align-items:center;
-}
-
-.eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  padding:10px 15px;
-  border-radius:999px;
-  background:#fff;
-  border:1px solid var(--line);
-  box-shadow:0 10px 30px rgba(15,23,42,.06);
-  color:#475569;
-  font-weight:850;
-}
-
-.pulse-dot{
-  width:10px;
-  height:10px;
-  background:#22c55e;
-  border-radius:50%;
-  box-shadow:0 0 0 8px rgba(34,197,94,.14);
-  animation:pulse 1.8s infinite;
-  flex:0 0 auto;
-}
-
-@keyframes pulse{
-  0%{box-shadow:0 0 0 0 rgba(34,197,94,.32)}
-  100%{box-shadow:0 0 0 13px rgba(34,197,94,0)}
-}
-
-.hero-title{
-  font-size:clamp(44px,6vw,76px);
-  line-height:.95;
-  letter-spacing:-3px;
-  margin:24px 0 18px;
-  color:#0f172a;
-}
-
-.hero-title span{
-  background:linear-gradient(135deg,#2563eb,#7c3aed);
-  -webkit-background-clip:text;
-  color:transparent;
-}
-
-.hero-subtitle{
-  font-size:22px;
-  font-weight:900;
-  color:#334155;
-  margin-bottom:16px;
-}
-
-.hero-text{
-  font-size:18px;
-  line-height:1.75;
-  color:#475569;
-  max-width:760px;
-}
-
-.ctaRow{
-  display:flex;
-  flex-wrap:wrap;
-  gap:13px;
-  margin-top:26px;
-}
-
-.cta{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:13px 18px;
-  border-radius:999px;
-  border:1px solid var(--line);
-  background:#fff;
-  color:#0f172a;
-  font-weight:900;
-  transition:.25s;
-  box-shadow:0 10px 30px rgba(15,23,42,.06);
-  text-decoration:none;
-}
-
-.cta:hover{
-  transform:translateY(-3px);
-  box-shadow:0 18px 45px rgba(15,23,42,.12);
-}
-
-.ctaPrimary{
-  color:#fff;
-  border:0;
-  background:linear-gradient(135deg,#2563eb,#7c3aed);
-}
-
-.hero-contact{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:22px;
-  color:#64748b;
-  font-weight:750;
-}
-
-.hero-contact span{
-  padding:9px 12px;
-  background:rgba(255,255,255,.75);
-  border:1px solid var(--line);
-  border-radius:999px;
-}
-
-.hero-contact a{
-  color:#334155;
-  text-decoration:none;
-}
-
-.profile-pro{
-  position:relative;
-  padding:28px;
-  border-radius:34px;
-  background:rgba(255,255,255,.82);
-  border:1px solid rgba(255,255,255,.85);
-  box-shadow:var(--shadow);
-  overflow:hidden;
-}
-
-.profile-pro:before{
-  content:"";
-  position:absolute;
-  top:-80px;
-  right:-80px;
-  width:220px;
-  height:220px;
-  border-radius:50%;
-  background:linear-gradient(135deg,rgba(56,189,248,.45),rgba(124,58,237,.25));
-  filter:blur(4px);
-}
-
-.profile-inner{
-  position:relative;
-  z-index:1;
-}
-
-.avatar-pro{
-  width:110px;
-  height:110px;
-  border-radius:30px;
-  background:linear-gradient(135deg,#0f172a,#2563eb);
-  display:grid;
-  place-items:center;
-  color:#fff;
-  font-size:38px;
-  font-weight:950;
-  box-shadow:0 18px 50px rgba(37,99,235,.28);
-  margin-bottom:18px;
-  transform:rotate(-3deg);
-}
-
-.profile-pro h3{
-  margin:0 0 8px;
-  font-size:26px;
-  color:#0f172a;
-}
-
-.profile-pro p{
-  color:#64748b;
-  line-height:1.7;
-  margin:0;
-}
-
-.trust-stats{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:14px;
-  margin-top:22px;
-}
-
-.trust-stat{
-  padding:18px;
-  border-radius:22px;
-  background:#f8fafc;
-  border:1px solid #e5e7eb;
-}
-
-.trust-stat strong{
-  display:block;
-  font-size:32px;
-  color:#0f172a;
-  margin-bottom:3px;
-}
-
-.trust-stat span{
-  color:#64748b;
-  font-weight:800;
-  font-size:14px;
-}
-
-.mini-trust{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-  margin-top:26px;
-}
-
-.mini-trust div{
-  padding:18px;
-  border-radius:22px;
-  background:#fff;
-  border:1px solid var(--line);
-  box-shadow:0 12px 35px rgba(15,23,42,.06);
-  color:#334155;
-  font-weight:850;
-  text-align:center;
-}
-
-.section-pro{
-  padding:42px 0;
-}
-
-.section-heading{
-  text-align:center;
-  margin-bottom:28px;
-}
-
-.section-heading .tag{
-  display:inline-block;
-  padding:8px 14px;
-  border-radius:999px;
-  background:#dbeafe;
-  color:#1d4ed8;
-  font-weight:950;
-  margin-bottom:12px;
-}
-
-.section-heading h2{
-  margin:0 0 10px;
-  font-size:38px;
-  color:#0f172a;
-  letter-spacing:-1px;
-}
-
-.section-heading p{
-  margin:0;
-  color:#64748b;
-  font-size:17px;
-}
-
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.service-card{
-  padding:26px;
-  border-radius:28px;
-  background:#fff;
-  border:1px solid var(--line);
-  box-shadow:0 15px 45px rgba(15,23,42,.07);
-  transition:.25s;
-}
-
-.service-card:hover{
-  transform:translateY(-7px);
-  box-shadow:0 25px 70px rgba(15,23,42,.13);
-}
-
-.service-icon{
-  width:48px;
-  height:48px;
-  border-radius:16px;
-  display:grid;
-  place-items:center;
-  background:linear-gradient(135deg,#dbeafe,#ede9fe);
-  margin-bottom:16px;
-  font-size:23px;
-}
-
-.service-card h3{
-  color:#0f172a;
-  margin:0 0 10px;
-  font-size:22px;
-}
-
-.service-card p{
-  color:#64748b;
-  line-height:1.7;
-  margin:0;
-}
-
-.about-premium{
-  padding:38px;
-  border-radius:34px;
-  background:#fff;
-  border:1px solid var(--line);
-  box-shadow:var(--shadow);
-  position:relative;
-  overflow:hidden;
-}
-
-.about-premium:before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(circle at 10% 10%, rgba(56,189,248,.14), transparent 32%),
-    radial-gradient(circle at 90% 0%, rgba(124,58,237,.12), transparent 34%);
-  pointer-events:none;
-}
-
-.about-premium > *{
-  position:relative;
-  z-index:1;
-}
-
-.about-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-  margin:28px 0;
-}
-
-.about-box{
-  padding:22px;
-  border-radius:24px;
-  background:#f8fafc;
-  border:1px solid #e5e7eb;
-  transition:.25s;
-}
-
-.about-box:hover{
-  transform:translateY(-5px);
-  background:#eff6ff;
-}
-
-.about-box h3{
-  margin:0 0 10px;
-  color:#0f172a;
-  font-size:22px;
-}
-
-.about-box p{
-  color:#64748b;
-  line-height:1.7;
-  margin:0;
-}
-
-.chips-pro{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:24px;
-}
-
-.chip-pro{
-  padding:10px 14px;
-  border-radius:999px;
-  background:#f1f5f9;
-  color:#334155;
-  border:1px solid #e2e8f0;
-  font-weight:850;
-  transition:.2s;
-}
-
-.chip-pro:hover{
-  background:#dbeafe;
-  color:#1d4ed8;
-  transform:translateY(-2px);
-}
-
-.filter-wrap{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-bottom:22px;
-}
-
-.filterBtn{
-  border:1px solid #dbe3ef;
-  background:#fff;
-  color:#334155;
-  padding:11px 16px;
-  border-radius:999px;
-  cursor:pointer;
-  font-weight:900;
-  transition:.2s;
-}
-
-.filterBtn.active,
-.filterBtn:hover{
-  background:#0f172a;
-  color:#fff;
-}
-
-.recruiter-card{
-  text-align:center;
-  padding:34px;
-  border-radius:32px;
-  background:linear-gradient(135deg,#0f172a,#1d4ed8);
-  color:#fff;
-  box-shadow:var(--shadow);
-}
-
-.recruiter-card h2{
-  margin:0 0 12px;
-  font-size:32px;
-}
-
-.recruiter-card p{
-  color:#dbeafe;
-  line-height:1.7;
-  max-width:760px;
-  margin:0 auto 22px;
-}
-
-.reveal{
-  opacity:0;
-  transform:translateY(24px);
-  transition:opacity .7s ease, transform .7s ease;
-}
-
-.reveal.show{
-  opacity:1;
-  transform:none;
-}
-
-/* Mobile navbar final fix */
-.menu-toggle{
-  display:none;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  border:1px solid var(--line);
-  background:#fff;
-  color:#0f172a;
-  font-size:28px;
-  font-weight:900;
-  cursor:pointer;
-  box-shadow:0 10px 30px rgba(15,23,42,.06);
-  align-items:center;
-  justify-content:center;
-  line-height:1;
-}
-
-@media(max-width:900px){
-  .navWrap{
-    top:12px;
-    z-index:9999;
-  }
-
-  .nav{
-    position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:12px;
-    padding:22px 24px;
-    border-radius:26px;
-  }
-
-  .brand{
-    font-size:24px;
-    flex:1;
-  }
-
-  .menu-toggle{
-    display:inline-flex;
-    flex-shrink:0;
-  }
-
-  .menu,
-  .actions{
-    display:none !important;
-  }
-
-  .nav.mobile-open{
-    position:fixed;
-    top:24px;
-    left:16px;
-    right:16px;
-    z-index:99999;
-    display:grid;
-    grid-template-columns:1fr auto;
-    align-items:center;
-    gap:0;
-    padding:42px 32px;
-    border-radius:32px;
-    background:rgba(255,255,255,.97);
-    box-shadow:0 22px 70px rgba(15,23,42,.18);
-  }
-
-  .nav.mobile-open .brand{
-    grid-column:1;
-    grid-row:1;
-    font-size:30px;
-    line-height:1;
-  }
-
-  .nav.mobile-open .menu-toggle{
-    grid-column:2;
-    grid-row:1;
-  }
-
-  .nav.mobile-open .menu{
-    display:flex !important;
-    grid-column:1 / -1;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:22px;
-    width:100%;
-    margin:34px 0 22px;
-    padding:28px 0 0;
-    border-top:1px solid var(--line);
-  }
-
-  .nav.mobile-open .navlink{
-    width:100%;
-    text-align:center;
-    justify-content:center;
-    font-size:21px;
-    font-weight:900;
-    color:#64748b;
-    white-space:nowrap;
-  }
-
-  .nav.mobile-open .actions{
-    display:flex !important;
-    grid-column:1 / -1;
-    flex-direction:column;
-    gap:14px;
-    width:100%;
-    padding-top:0;
-  }
-
-  .nav.mobile-open .actions .btn,
-  .nav.mobile-open .actions a,
-  .nav.mobile-open .actions button,
-  .nav.mobile-open .btn{
-    width:100%;
-    justify-content:center;
-    text-align:center;
-  }
-
-  .hero-title{
-    font-size:clamp(46px,12vw,62px);
-    line-height:1.02;
-    letter-spacing:-1.5px;
-  }
-
-  .hero-subtitle{
-    font-size:20px;
-    line-height:1.6;
-  }
-
-  .hero-pro,
-  .service-grid,
-  .about-grid{
-    grid-template-columns:1fr;
-  }
-
-  .mini-trust{
-    grid-template-columns:1fr;
-  }
-
-  .about-premium{
-    padding:25px;
-  }
-}
-</style>
-</head>
-
-<body>
-
-<div class="container navWrap">
-  <div class="nav">
-    <a class="brand" href="index.html">Portfolio.</a>
-
-    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-
-    <div class="menu">
-      <a href="experience.html" class="navlink" data-i18n="nav.experience">Experience</a>
-      <a href="value.html" class="navlink" data-i18n="nav.value">Why Hire Me</a>
-      <a href="skills.html" class="navlink" data-i18n="nav.skills">Skills</a>
-      <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
-      <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
-      <a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>
-      <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
-    </div>
-
-    <div class="actions">
-        <button class="btn" type="button" id="langToggle">DE</button>
-        <a class="btn btnPrimary" href="tel:+4917666145047" data-i18n="nav.callNow">Call Now</a>
-      </div>
-  </div>
-</div>
-
-<section class="trust-hero">
-  <div class="container hero-pro">
-    <div class="reveal">
-      <div class="eyebrow">
-        <span class="pulse-dot"></span>
-        <span data-i18n="home.badge">Available for opportunities in Germany</span>
-      </div>
-
-      <h1 class="hero-title" data-i18n="home.heroTitle">
-        Building scalable software with <span>trust, clarity & delivery.</span>
-      </h1>
-
-      <div class="hero-subtitle" data-i18n="home.heroSubtitle">
-        Rakesh Prajapati — Senior Software Engineer · Software Architect · IT Project Manager
-      </div>
-
-      <p class="hero-text" data-i18n="home.heroText">
-        I help companies design, build and deliver reliable software systems. With 12+ years of experience in PHP, SaaS platforms, enterprise systems, DevOps and technical leadership, I bridge business goals with scalable technical solutions.
-      </p>
-
-      <div class="ctaRow">
-        <a class="cta ctaPrimary" href="contact.html" data-i18n="home.cta.startConversation">Start Conversation</a>
-        <a class="cta" href="documents.html" data-i18n="home.cta.viewDocuments">View Documents</a>
-        <a class="cta" href="experience.html" data-i18n="home.cta.exploreExperience">Explore Experience</a>
-        <a class="cta" href="tel:+4917666145047" data-i18n="home.cta.callNow">Call Now</a>
-      </div>
-
-      <div class="hero-contact">
-        <span>📍 <span data-i18n="home.location">Heilbronn, Germany</span></span>
-        <span>📞 <a href="tel:+4917666145047">+49 17666145047</a></span>
-        <span>✉️ <a href="mailto:rp151090@gmail.com">rp151090@gmail.com</a></span>
-      </div>
-    </div>
-
-    <aside class="profile-pro reveal">
-      <div class="profile-inner">
-        <div class="avatar-pro">RP</div>
-
-        <h3 data-i18n="home.profileTitle">Reliable technical leadership</h3>
-        <p data-i18n="home.profileText">
-          Practical engineering mindset, clean communication, scalable architecture and strong ownership from planning to production.
-        </p>
-
-        <div class="trust-stats">
-          <div class="trust-stat">
-            <strong data-count="12">0</strong>
-            <span data-i18n="home.stat.years">Years Experience</span>
-          </div>
-
-          <div class="trust-stat">
-            <strong data-count="18">0</strong>
-            <span data-i18n="home.stat.team">Team Managed</span>
-          </div>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-  <div class="container mini-trust reveal">
-    <div data-i18n="home.trust.germany">✅ Germany-Based</div>
-    <div data-i18n="home.trust.enterprise">✅ Enterprise Experience</div>
-    <div data-i18n="home.trust.saas">✅ SaaS & Architecture</div>
-  </div>
-</section>
-
-<section class="section-pro">
-  <div class="container">
-    <div class="section-heading reveal">
-      <span class="tag" data-i18n="home.services.badge">Services & Strengths</span>
-      <h2 data-i18n="home.services.title">What I bring to your team</h2>
-      <p data-i18n="home.services.subtitle">Strong technical execution with leadership and business understanding.</p>
-    </div>
-
-    <div class="service-grid">
-      <div class="service-card reveal">
-        <div class="service-icon">💻</div>
-        <h3 data-i18n="home.service.engineering.title">Software Engineering</h3>
-        <p data-i18n="home.service.engineering.text">PHP, Laravel, MySQL, REST APIs, SaaS platforms, backend systems and maintainable full-stack solutions.</p>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-icon">🏗️</div>
-        <h3 data-i18n="home.service.architecture.title">Architecture & DevOps</h3>
-        <p data-i18n="home.service.architecture.text">Scalable architecture, Linux servers, Apache, Nginx, Docker, CI/CD, performance tuning and cloud readiness.</p>
-      </div>
-
-      <div class="service-card reveal">
-        <div class="service-icon">🤝</div>
-        <h3 data-i18n="home.service.leadership.title">Project Leadership</h3>
-        <p data-i18n="home.service.leadership.text">Requirements, stakeholder management, agile delivery, Jira, Scrum, team coordination and reliable execution.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-pro">
-  <div class="container">
-    <div class="about-premium reveal">
-      <div class="section-heading">
-        <span class="tag" data-i18n="about.badge">About Me</span>
-        <h2 data-i18n="about.title">About Rakesh Prajapati</h2>
-        <p data-i18n="about.subtitle">Senior Software Engineer, Software Architect and IT Project Manager based in Germany.</p>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-box">
-          <h3 data-i18n="about.card.years.title">12+ Years</h3>
-          <p data-i18n="about.card.years.text">Enterprise software development, architecture, SaaS platforms and delivery leadership.</p>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="google-site-verification" content="_MlEjxOIbFamrFURpFTnCvheGzi6OoszpjJX03iKb7Q">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHB97CMVXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-ZHB97CMVXX');
+        </script>
+        <title>Rakesh Prajapati | Senior Software Engineer | PHP, Python, AI & Machine Learning</title>
+        <meta name="description" content="Rakesh Prajapati is a Senior Software Engineer and Software Architect with 12+ years of experience across PHP, Python, Artificial Intelligence and Machine Learning, supported by enterprise backend engineering, Generative AI, RAG, cloud and scalable software architecture.">
+        <meta name="keywords" content="Rakesh Prajapati, Senior Software Engineer, PHP Engineer, Python Engineer, AI Engineer, Artificial Intelligence, Machine Learning Engineer, Generative AI, RAG, FastAPI, Laravel, Software Architect, Backend Engineer">
+        <meta name="author" content="Rakesh Prajapati">
+
+        <link rel="canonical" href="https://rakeshprajapati.de/">
+        <link rel="profile" href="https://gmpg.org/xfn/11">
+        <link rel="me" href="https://www.linkedin.com/in/rakesh-prajapati-83124238">
+        <link rel="stylesheet" href="assets/style.css">
+
+        <style>
+            :root{
+                --ink:#111827;
+                --muted:#64748b;
+                --blue:#2563eb;
+                --sky:#38bdf8;
+                --purple:#7c3aed;
+                --soft:#f8fafc;
+                --line:#e5e7eb;
+                --dark:#0f172a;
+                --shadow:0 22px 70px rgba(15,23,42,.12);
+            }
+
+            body{
+                background:
+                    radial-gradient(circle at top left, rgba(37,99,235,.14), transparent 28%),
+                    radial-gradient(circle at top right, rgba(124,58,237,.12), transparent 30%),
+                    linear-gradient(180deg,#f8fbff,#eef4ff);
+                color:#0f172a;
+            }
+
+            .navWrap{
+                position:sticky;
+                top:14px;
+                z-index:50;
+            }
+
+            .trust-hero{
+                padding:70px 0 30px;
+            }
+
+            .hero-pro{
+                display:grid;
+                grid-template-columns:1.15fr .85fr;
+                gap:34px;
+                align-items:center;
+            }
+
+            .eyebrow{
+                display:inline-flex;
+                align-items:center;
+                gap:10px;
+                padding:10px 15px;
+                border-radius:999px;
+                background:#fff;
+                border:1px solid var(--line);
+                box-shadow:0 10px 30px rgba(15,23,42,.06);
+                color:#475569;
+                font-weight:850;
+            }
+
+            .pulse-dot{
+                width:10px;
+                height:10px;
+                background:#22c55e;
+                border-radius:50%;
+                box-shadow:0 0 0 8px rgba(34,197,94,.14);
+                animation:pulse 1.8s infinite;
+                flex:0 0 auto;
+            }
+
+            @keyframes pulse{
+                0%{
+                    box-shadow:0 0 0 0 rgba(34,197,94,.32)
+                }
+                100%{
+                    box-shadow:0 0 0 13px rgba(34,197,94,0)
+                }
+            }
+
+            .hero-title{
+                font-size:clamp(44px,6vw,76px);
+                line-height:.95;
+                letter-spacing:-3px;
+                margin:24px 0 18px;
+                color:#0f172a;
+            }
+
+            .hero-title span{
+                background:linear-gradient(135deg,#2563eb,#7c3aed);
+                -webkit-background-clip:text;
+                color:transparent;
+            }
+
+            .hero-subtitle{
+                font-size:22px;
+                font-weight:900;
+                color:#334155;
+                margin-bottom:16px;
+            }
+
+            .hero-text{
+                font-size:18px;
+                line-height:1.75;
+                color:#475569;
+                max-width:760px;
+            }
+
+            .ctaRow{
+                display:flex;
+                flex-wrap:wrap;
+                gap:13px;
+                margin-top:26px;
+            }
+
+            .cta{
+                display:inline-flex;
+                align-items:center;
+                justify-content:center;
+                gap:8px;
+                padding:13px 18px;
+                border-radius:999px;
+                border:1px solid var(--line);
+                background:#fff;
+                color:#0f172a;
+                font-weight:900;
+                transition:.25s;
+                box-shadow:0 10px 30px rgba(15,23,42,.06);
+                text-decoration:none;
+            }
+
+            .cta:hover{
+                transform:translateY(-3px);
+                box-shadow:0 18px 45px rgba(15,23,42,.12);
+            }
+
+            .ctaPrimary{
+                color:#fff;
+                border:0;
+                background:linear-gradient(135deg,#2563eb,#7c3aed);
+            }
+
+            .hero-contact{
+                display:flex;
+                flex-wrap:wrap;
+                gap:12px;
+                margin-top:22px;
+                color:#64748b;
+                font-weight:750;
+            }
+
+            .hero-contact span{
+                padding:9px 12px;
+                background:rgba(255,255,255,.75);
+                border:1px solid var(--line);
+                border-radius:999px;
+            }
+
+            .hero-contact a{
+                color:#334155;
+                text-decoration:none;
+            }
+
+            .profile-pro{
+                position:relative;
+                padding:28px;
+                border-radius:34px;
+                background:rgba(255,255,255,.82);
+                border:1px solid rgba(255,255,255,.85);
+                box-shadow:var(--shadow);
+                overflow:hidden;
+            }
+
+            .profile-pro:before{
+                content:"";
+                position:absolute;
+                top:-80px;
+                right:-80px;
+                width:220px;
+                height:220px;
+                border-radius:50%;
+                background:linear-gradient(135deg,rgba(56,189,248,.45),rgba(124,58,237,.25));
+                filter:blur(4px);
+            }
+
+            .profile-inner{
+                position:relative;
+                z-index:1;
+            }
+
+            .avatar-pro{
+                width:110px;
+                height:110px;
+                border-radius:30px;
+                background:linear-gradient(135deg,#0f172a,#2563eb);
+                display:grid;
+                place-items:center;
+                color:#fff;
+                font-size:38px;
+                font-weight:950;
+                box-shadow:0 18px 50px rgba(37,99,235,.28);
+                margin-bottom:18px;
+                transform:rotate(-3deg);
+            }
+
+            .profile-pro h3{
+                margin:0 0 8px;
+                font-size:26px;
+                color:#0f172a;
+            }
+
+            .profile-pro p{
+                color:#64748b;
+                line-height:1.7;
+                margin:0;
+            }
+
+            .trust-stats{
+                display:grid;
+                grid-template-columns:repeat(2,1fr);
+                gap:14px;
+                margin-top:22px;
+            }
+
+            .trust-stat{
+                padding:18px;
+                border-radius:22px;
+                background:#f8fafc;
+                border:1px solid #e5e7eb;
+            }
+
+            .trust-stat strong{
+                display:block;
+                font-size:32px;
+                color:#0f172a;
+                margin-bottom:3px;
+            }
+
+            .trust-stat span{
+                color:#64748b;
+                font-weight:800;
+                font-size:14px;
+            }
+
+            .mini-trust{
+                display:grid;
+                grid-template-columns:repeat(3,1fr);
+                gap:14px;
+                margin-top:26px;
+            }
+
+            .mini-trust div{
+                padding:18px;
+                border-radius:22px;
+                background:#fff;
+                border:1px solid var(--line);
+                box-shadow:0 12px 35px rgba(15,23,42,.06);
+                color:#334155;
+                font-weight:850;
+                text-align:center;
+            }
+
+            .section-pro{
+                padding:42px 0;
+            }
+
+            .section-heading{
+                text-align:center;
+                margin-bottom:28px;
+            }
+
+            .section-heading .tag{
+                display:inline-block;
+                padding:8px 14px;
+                border-radius:999px;
+                background:#dbeafe;
+                color:#1d4ed8;
+                font-weight:950;
+                margin-bottom:12px;
+            }
+
+            .section-heading h2{
+                margin:0 0 10px;
+                font-size:38px;
+                color:#0f172a;
+                letter-spacing:-1px;
+            }
+
+            .section-heading p{
+                margin:0;
+                color:#64748b;
+                font-size:17px;
+            }
+
+            .service-grid{
+                display:grid;
+                grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+                gap:20px;
+            }
+
+            .service-card{
+                padding:26px;
+                border-radius:28px;
+                background:#fff;
+                border:1px solid var(--line);
+                box-shadow:0 15px 45px rgba(15,23,42,.07);
+                transition:.25s;
+            }
+
+            .service-card:hover{
+                transform:translateY(-7px);
+                box-shadow:0 25px 70px rgba(15,23,42,.13);
+            }
+
+            .service-icon{
+                width:48px;
+                height:48px;
+                border-radius:16px;
+                display:grid;
+                place-items:center;
+                background:linear-gradient(135deg,#dbeafe,#ede9fe);
+                margin-bottom:16px;
+                font-size:23px;
+            }
+
+            .service-card h3{
+                color:#0f172a;
+                margin:0 0 10px;
+                font-size:22px;
+            }
+
+            .service-card p{
+                color:#64748b;
+                line-height:1.7;
+                margin:0;
+            }
+
+            .about-premium{
+                padding:38px;
+                border-radius:34px;
+                background:#fff;
+                border:1px solid var(--line);
+                box-shadow:var(--shadow);
+                position:relative;
+                overflow:hidden;
+            }
+
+            .about-premium:before{
+                content:"";
+                position:absolute;
+                inset:0;
+                background:
+                    radial-gradient(circle at 10% 10%, rgba(56,189,248,.14), transparent 32%),
+                    radial-gradient(circle at 90% 0%, rgba(124,58,237,.12), transparent 34%);
+                pointer-events:none;
+            }
+
+            .about-premium > *{
+                position:relative;
+                z-index:1;
+            }
+
+            .about-grid{
+                display:grid;
+                grid-template-columns:repeat(3,1fr);
+                gap:18px;
+                margin:28px 0;
+            }
+
+            .about-box{
+                padding:22px;
+                border-radius:24px;
+                background:#f8fafc;
+                border:1px solid #e5e7eb;
+                transition:.25s;
+            }
+
+            .about-box:hover{
+                transform:translateY(-5px);
+                background:#eff6ff;
+            }
+
+            .about-box h3{
+                margin:0 0 10px;
+                color:#0f172a;
+                font-size:22px;
+            }
+
+            .about-box p{
+                color:#64748b;
+                line-height:1.7;
+                margin:0;
+            }
+
+            .chips-pro{
+                display:flex;
+                flex-wrap:wrap;
+                gap:10px;
+                margin-top:24px;
+            }
+
+            .chip-pro{
+                padding:10px 14px;
+                border-radius:999px;
+                background:#f1f5f9;
+                color:#334155;
+                border:1px solid #e2e8f0;
+                font-weight:850;
+                transition:.2s;
+            }
+
+            .chip-pro:hover{
+                background:#dbeafe;
+                color:#1d4ed8;
+                transform:translateY(-2px);
+            }
+
+            .filter-wrap{
+                display:flex;
+                justify-content:center;
+                flex-wrap:wrap;
+                gap:10px;
+                margin-bottom:22px;
+            }
+
+            .filterBtn{
+                border:1px solid #dbe3ef;
+                background:#fff;
+                color:#334155;
+                padding:11px 16px;
+                border-radius:999px;
+                cursor:pointer;
+                font-weight:900;
+                transition:.2s;
+            }
+
+            .filterBtn.active,
+            .filterBtn:hover{
+                background:#0f172a;
+                color:#fff;
+            }
+
+            .recruiter-card{
+                text-align:center;
+                padding:34px;
+                border-radius:32px;
+                background:linear-gradient(135deg,#0f172a,#1d4ed8);
+                color:#fff;
+                box-shadow:var(--shadow);
+            }
+
+            .recruiter-card h2{
+                margin:0 0 12px;
+                font-size:32px;
+            }
+
+            .recruiter-card p{
+                color:#dbeafe;
+                line-height:1.7;
+                max-width:760px;
+                margin:0 auto 22px;
+            }
+
+            .reveal{
+                opacity:0;
+                transform:translateY(24px);
+                transition:opacity .7s ease, transform .7s ease;
+            }
+
+            .reveal.show{
+                opacity:1;
+                transform:none;
+            }
+
+            /* Mobile navbar final fix */
+            .menu-toggle{
+                display:none;
+                width:58px;
+                height:58px;
+                border-radius:50%;
+                border:1px solid var(--line);
+                background:#fff;
+                color:#0f172a;
+                font-size:28px;
+                font-weight:900;
+                cursor:pointer;
+                box-shadow:0 10px 30px rgba(15,23,42,.06);
+                align-items:center;
+                justify-content:center;
+                line-height:1;
+            }
+
+            @media(max-width:900px){
+                .navWrap{
+                    top:12px;
+                    z-index:9999;
+                }
+
+                .nav{
+                    position:relative;
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-between;
+                    gap:12px;
+                    padding:22px 24px;
+                    border-radius:26px;
+                }
+
+                .brand{
+                    font-size:24px;
+                    flex:1;
+                }
+
+                .menu-toggle{
+                    display:inline-flex;
+                    flex-shrink:0;
+                }
+
+                .menu,
+                .actions{
+                    display:none !important;
+                }
+
+                .nav.mobile-open{
+                    position:fixed;
+                    top:24px;
+                    left:16px;
+                    right:16px;
+                    z-index:99999;
+                    display:grid;
+                    grid-template-columns:1fr auto;
+                    align-items:center;
+                    gap:0;
+                    padding:42px 32px;
+                    border-radius:32px;
+                    background:rgba(255,255,255,.97);
+                    box-shadow:0 22px 70px rgba(15,23,42,.18);
+                }
+
+                .nav.mobile-open .brand{
+                    grid-column:1;
+                    grid-row:1;
+                    font-size:30px;
+                    line-height:1;
+                }
+
+                .nav.mobile-open .menu-toggle{
+                    grid-column:2;
+                    grid-row:1;
+                }
+
+                .nav.mobile-open .menu{
+                    display:flex !important;
+                    grid-column:1 / -1;
+                    flex-direction:column;
+                    align-items:center;
+                    justify-content:center;
+                    gap:22px;
+                    width:100%;
+                    margin:34px 0 22px;
+                    padding:28px 0 0;
+                    border-top:1px solid var(--line);
+                }
+
+                .nav.mobile-open .navlink{
+                    width:100%;
+                    text-align:center;
+                    justify-content:center;
+                    font-size:21px;
+                    font-weight:900;
+                    color:#64748b;
+                    white-space:nowrap;
+                }
+
+                .nav.mobile-open .actions{
+                    display:flex !important;
+                    grid-column:1 / -1;
+                    flex-direction:column;
+                    gap:14px;
+                    width:100%;
+                    padding-top:0;
+                }
+
+                .nav.mobile-open .actions .btn,
+                .nav.mobile-open .actions a,
+                .nav.mobile-open .actions button,
+                .nav.mobile-open .btn{
+                    width:100%;
+                    justify-content:center;
+                    text-align:center;
+                }
+
+                .hero-title{
+                    font-size:clamp(46px,12vw,62px);
+                    line-height:1.02;
+                    letter-spacing:-1.5px;
+                }
+
+                .hero-subtitle{
+                    font-size:20px;
+                    line-height:1.6;
+                }
+
+                .hero-pro,
+                .service-grid,
+                .about-grid{
+                    grid-template-columns:1fr;
+                }
+
+                .mini-trust{
+                    grid-template-columns:1fr;
+                }
+
+                .about-premium{
+                    padding:25px;
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container navWrap">
+            <div class="nav">
+                <a class="brand" href="index.html">Portfolio.</a>
+
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+
+                <div class="menu">
+                    <a href="experience.html" class="navlink" data-i18n="nav.experience">Experience</a>
+                    <a href="value.html" class="navlink active" data-i18n="nav.value">Why Work With Me</a>
+                    <a href="skills.html" class="navlink" data-i18n="nav.skills">Skills</a>
+                    <a href="education.html" class="navlink" data-i18n="nav.education">Education</a>
+                    <a href="certifications.html" class="navlink" data-i18n="nav.certs">Certifications</a>
+                    <!--<a href="documents.html" class="navlink" data-i18n="nav.docs">Documents</a>-->
+                    <a href="contact.html" class="navlink" data-i18n="nav.contact">Contact</a>
+                </div>
+
+                <div class="actions">
+                    <button class="btn" type="button" id="langToggle">DE</button>
+                    <a class="btn btnPrimary" href="tel:+4917666145047" data-i18n="nav.callNow">Call Now</a>
+                </div>
+            </div>
         </div>
 
-        <div class="about-box">
-          <h3 data-i18n="about.card.current.title">Current Role</h3>
-          <p data-i18n="about.card.current.text">Working at <b>F.A.S.T. GmbH, Germany</b>, leading enterprise software initiatives and scalable system development.</p>
-        </div>
+        <section class="trust-hero">
+            <div class="container hero-pro">
+                <div class="reveal">
+                    <div class="eyebrow">
+                        <span class="pulse-dot"></span>
+                        <span data-i18n="home.badge">Founder of TrustNova Tech — Available for consulting & software projects</span>      </div>
 
-        <div class="about-box">
-          <h3 data-i18n="about.card.global.title">Global Experience</h3>
-          <p data-i18n="about.card.global.text">Experience with enterprise projects connected to <b>Netflix, Paramount, Sony, Viacom</b> and <b>Saint-Gobain France</b>.</p>
-        </div>
-      </div>
+                    <h1 class="hero-title" data-ai-i18n="home.heroTitle">
+                        Building scalable software with <span>PHP, Python, AI & Machine Learning.</span>
+                    </h1>
 
-      <p class="hero-text" data-i18n="about.text">
-        I bridge business objectives with scalable technology, lead engineering teams, and ensure reliable delivery from concept to production. My work covers requirements analysis, architecture design, full-stack development, deployment, performance optimization, stakeholder management and long-term system improvement.
-      </p>
+                    <div class="hero-subtitle" data-ai-i18n="home.heroSubtitle">
+                        Rakesh Prajapati — Senior Software Engineer · PHP · Python · AI · Machine Learning
+                    </div>
 
-      <div class="chips-pro">
-        <span class="chip-pro" data-i18n="about.skill.architecture">Software Architecture</span>
-        <span class="chip-pro" data-i18n="about.skill.projectLeadership">Project Leadership</span>
-        <span class="chip-pro" data-i18n="about.skill.enterprise">Enterprise Systems</span>
-        <span class="chip-pro" data-i18n="about.skill.fullstack">Full-Stack Development</span>
-        <span class="chip-pro" data-i18n="about.skill.agile">Agile Delivery</span>
-        <span class="chip-pro" data-i18n="about.skill.devops">DevOps Practices</span>
-        <span class="chip-pro" data-i18n="about.skill.database">Database Design</span>
-        <span class="chip-pro" data-i18n="about.skill.performance">Performance Optimization</span>
-      </div>
-    </div>
-  </div>
-</section>
+                    <p class="hero-text" data-ai-i18n="home.heroText">
+                        My four primary technology stacks are PHP, Python, Artificial Intelligence and Machine Learning. I combine them with 12+ years of backend engineering, software architecture and technical leadership to build scalable enterprise solutions.
+                    </p>
 
-<section class="section-pro">
-  <div class="container">
-    <div class="section-heading reveal">
-      <span class="tag" data-i18n="skills.badge">Skills</span>
-      <h2 data-i18n="skills.title">Technical toolbox</h2>
-      <p data-i18n="skills.subtitle">Filter by area to quickly understand my core strengths.</p>
-    </div>
+                    <div class="ctaRow">
+                        <a class="cta ctaPrimary" href="contact.html" data-i18n="home.cta.startConversation">Start Conversation</a>
+                        <!--<a class="cta" href="documents.html" data-i18n="home.cta.viewDocuments">View Documents</a>-->
+                        <a class="cta" href="experience.html" data-i18n="home.cta.exploreExperience">Explore Experience</a>
+                        <a class="cta" href="tel:+4917666145047" data-i18n="home.cta.callNow">Call Now</a>
+                    </div>
 
-    <div class="filter-wrap reveal">
-      <button class="filterBtn active" data-filter="all" data-i18n="skills.filter.all">All</button>
-      <button class="filterBtn" data-filter="backend" data-i18n="skills.filter.backend">Backend</button>
-      <button class="filterBtn" data-filter="frontend" data-i18n="skills.filter.frontend">Frontend</button>
-      <button class="filterBtn" data-filter="devops" data-i18n="skills.filter.devops">DevOps</button>
-      <button class="filterBtn" data-filter="leadership" data-i18n="skills.filter.management">Leadership</button>
-    </div>
+                    <div class="hero-contact">
+                        <span>📍 <span data-i18n="home.location">Heilbronn, Germany</span></span>
+                        <span>📞 <a href="tel:+4917666145047">+49 17666145047</a></span>
+                        <span>✉️ <a href="mailto:rp151090@gmail.com">rp151090@gmail.com</a></span>
+                    </div>
+                </div>
 
-    <div class="chips-pro reveal" id="skillsList">
-      <span class="chip-pro" data-cat="backend">PHP</span>
-      <span class="chip-pro" data-cat="backend">Laravel</span>
-      <span class="chip-pro" data-cat="backend">MySQL</span>
-      <span class="chip-pro" data-cat="backend">MongoDB</span>
-      <span class="chip-pro" data-cat="backend">REST APIs</span>
-      <span class="chip-pro" data-cat="backend">SOAP</span>
-      <span class="chip-pro" data-cat="frontend">HTML5</span>
-      <span class="chip-pro" data-cat="frontend">CSS3</span>
-      <span class="chip-pro" data-cat="frontend">JavaScript</span>
-      <span class="chip-pro" data-cat="frontend">React.js</span>
-      <span class="chip-pro" data-cat="frontend">Angular</span>
-      <span class="chip-pro" data-cat="devops">Linux</span>
-      <span class="chip-pro" data-cat="devops">Apache</span>
-      <span class="chip-pro" data-cat="devops">Nginx</span>
-      <span class="chip-pro" data-cat="devops">Docker</span>
-      <span class="chip-pro" data-cat="devops">AWS</span>
-      <span class="chip-pro" data-cat="devops">Jenkins</span>
-      <span class="chip-pro" data-cat="leadership">Scrum</span>
-      <span class="chip-pro" data-cat="leadership">Jira</span>
-      <span class="chip-pro" data-cat="leadership" data-i18n="about.skill.projectLeadership">Project Leadership</span>
-      <span class="chip-pro" data-cat="leadership">Stakeholder Management</span>
-    </div>
-  </div>
-</section>
+                <aside class="profile-pro reveal">
+                    <div class="profile-inner">
+                        <div class="avatar-pro">RP</div>
 
-<section class="section-pro">
-  <div class="container">
-    <div class="recruiter-card reveal">
-      <h2 data-i18n="home.forRecruiters">For recruiters, companies and collaborators</h2>
-      <p data-i18n="home.forRecruitersTxt">
-        Open my documents to download my CV and cover letter, or contact me directly for software engineering, architecture or IT project management opportunities.
-      </p>
+                        <h3 data-ai-i18n="home.profileTitle">Senior engineering across four primary stacks</h3>
+                        <p data-ai-i18n="home.profileText">
+                            Production-oriented engineering across PHP, Python, Artificial Intelligence and Machine Learning, supported by scalable architecture, cloud and DevOps.
+                        </p>
 
-      <div class="ctaRow" style="justify-content:center">
-        <a class="cta ctaPrimary" href="documents.html" data-i18n="common.viewDocuments">View Documents</a>
-        <a class="cta" href="contact.html" data-i18n="common.contactMe">Contact Me</a>
-      </div>
-    </div>
-  </div>
-</section>
+                        <div class="trust-stats">
+                            <div class="trust-stat">
+                                <strong data-count="12">0</strong>
+                                <span data-i18n="home.stat.years">Years Experience</span>
+                            </div>
 
-<div id="footerMount"></div>
+                            <div class="trust-stat">
+                                <strong data-count="18">0</strong>
+                                <span data-i18n="home.stat.team">Team Managed</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
 
-<script src="assets/i18n.js"></script>
-<script src="assets/app.js"></script>
+            <div class="container mini-trust reveal">
+                <div data-i18n="home.trust.germany">✅ Germany-Based</div>
+                <div data-i18n="home.trust.enterprise">✅ Enterprise Experience</div>
+                <div data-ai-i18n="home.trust.ai">✅ PHP · Python · AI · Machine Learning</div>
+            </div>
+        </section>
 
-<script>
-  const revealItems = document.querySelectorAll('.reveal');
+        <section class="section-pro">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="tag" data-i18n="home.services.badge">Services & Strengths</span>
+                    <h2 data-i18n="home.services.title">What I bring to your project</h2>
+                    <p data-i18n="home.services.subtitle">Strong technical execution with leadership and business understanding.</p>
+                </div>
 
-  const observer = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }
-    });
-  }, { threshold: 0.15 });
+                <div class="service-grid">
+                    <div class="service-card reveal">
+                        <div class="service-icon">🐘</div>
+                        <h3 data-ai-i18n="home.service.php.title">PHP Engineering</h3>
+                        <p data-ai-i18n="home.service.php.text">PHP 8.x, Laravel, Symfony, CodeIgniter, Joomla, MySQL, REST APIs and production-grade backend systems.</p>
+                    </div>
 
-  revealItems.forEach(function(item){
-    observer.observe(item);
-  });
+                    <div class="service-card reveal">
+                        <div class="service-icon">🐍</div>
+                        <h3 data-ai-i18n="home.service.python.title">Python Engineering</h3>
+                        <p data-ai-i18n="home.service.python.text">Python, FastAPI, SQLAlchemy, Alembic, PostgreSQL, NumPy, pandas and API-driven backend development.</p>
+                    </div>
 
-  const counters = document.querySelectorAll('[data-count]');
-  let started = false;
+                    <div class="service-card reveal">
+                        <div class="service-icon">🤖</div>
+                        <h3 data-ai-i18n="home.service.ai.title">Artificial Intelligence</h3>
+                        <p data-ai-i18n="home.service.ai.text">Generative AI, RAG, LLMs, embeddings, semantic search, retrieval pipelines and enterprise AI applications.</p>
+                    </div>
 
-  function startCounter(){
-    if(started) return;
-    started = true;
+                    <div class="service-card reveal">
+                        <div class="service-icon">🧠</div>
+                        <h3 data-ai-i18n="home.service.ml.title">Machine Learning</h3>
+                        <p data-ai-i18n="home.service.ml.text">scikit-learn, Random Forest, supervised learning, multiclass classification, feature engineering, MFCC, FFT and audio ML.</p>
+                    </div>
 
-    counters.forEach(function(counter){
-      const target = Number(counter.getAttribute('data-count'));
-      let current = 0;
-      const step = Math.max(1, Math.ceil(target / 35));
+                    <div class="service-card reveal">
+                        <div class="service-icon">🏗️</div>
+                        <h3 data-i18n="home.service.architecture.title">Architecture & DevOps</h3>
+                        <p data-i18n="home.service.architecture.text">Scalable architecture, Linux servers, Apache, Nginx, Docker, CI/CD, performance tuning and cloud readiness.</p>
+                    </div>
 
-      const timer = setInterval(function(){
-        current += step;
+                    <div class="service-card reveal">
+                        <div class="service-icon">🤝</div>
+                        <h3 data-i18n="home.service.leadership.title">Project Leadership</h3>
+                        <p data-i18n="home.service.leadership.text">Requirements, stakeholder management, agile delivery, Jira, Scrum, team coordination and reliable execution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        if(current >= target){
-          counter.textContent = target + '+';
-          clearInterval(timer);
-        }else{
-          counter.textContent = current;
-        }
-      }, 35);
-    });
-  }
+        <section class="section-pro">
+            <div class="container">
+                <div class="about-premium reveal">
+                    <div class="section-heading">
+                        <span class="tag" data-i18n="about.badge">About Me</span>
+                        <h2 data-i18n="about.title">About Rakesh Prajapati</h2>
+                        <p data-ai-i18n="about.subtitle">Senior Software Engineer and Software Architect with four primary technology stacks: PHP, Python, Artificial Intelligence and Machine Learning, supported by enterprise architecture, cloud and backend engineering.</p>
+                    </div>
 
-  const counterObserver = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        startCounter();
-      }
-    });
-  });
+                    <div class="about-grid">
+                        <div class="about-box">
+                            <h3 data-i18n="about.card.years.title">12+ Years</h3>
+                            <p data-i18n="about.card.years.text">Enterprise software development, architecture, SaaS platforms and delivery leadership.</p>
+                        </div>
 
-  counters.forEach(function(counter){
-    counterObserver.observe(counter);
-  });
+                        <div class="about-box">
+                            <h3 data-i18n="about.card.current.title">Current Role</h3>
+                            <p data-i18n="about.card.current.text">Working at <b>F.A.S.T. GmbH, Germany</b>, leading enterprise software initiatives and scalable system development.</p>
+                        </div>
 
-  const filterButtons = document.querySelectorAll('.filterBtn');
-  const skillChips = document.querySelectorAll('#skillsList .chip-pro');
+                        <div class="about-box">
+                            <h3 data-i18n="about.card.global.title">Global Experience</h3>
+                            <p data-i18n="about.card.global.text">Experience with enterprise projects connected to <b>Netflix, Paramount, Sony, Viacom</b> and <b>Saint-Gobain France</b>.</p>
+                        </div>
+                    </div>
 
-  filterButtons.forEach(function(button){
-    button.addEventListener('click', function(){
-      const filter = button.getAttribute('data-filter');
+                    <p class="hero-text" data-ai-i18n="about.text">
+                        I bridge business objectives with scalable technology across PHP, Python, Artificial Intelligence and Machine Learning. My supporting strengths include Generative AI, RAG, APIs, enterprise platforms, cloud delivery, software architecture, DevOps and technical leadership.
+                    </p>
 
-      filterButtons.forEach(function(btn){
-        btn.classList.remove('active');
-      });
+                    <div class="chips-pro">
+                        <span class="chip-pro">PHP</span>
+                        <span class="chip-pro">Python</span>
+                        <span class="chip-pro">Artificial Intelligence</span>
+                        <span class="chip-pro">Machine Learning</span>
+                        <span class="chip-pro">Generative AI</span>
+                        <span class="chip-pro">RAG</span>
+                        <span class="chip-pro" data-i18n="about.skill.architecture">Software Architecture</span>
+                        <span class="chip-pro" data-i18n="about.skill.projectLeadership">Project Leadership</span>
+                        <span class="chip-pro" data-i18n="about.skill.enterprise">Enterprise Systems</span>
+                        <span class="chip-pro" data-i18n="about.skill.fullstack">Full-Stack Development</span>
+                        <span class="chip-pro" data-i18n="about.skill.agile">Agile Delivery</span>
+                        <span class="chip-pro" data-i18n="about.skill.devops">DevOps Practices</span>
+                        <span class="chip-pro" data-i18n="about.skill.database">Database Design</span>
+                        <span class="chip-pro" data-i18n="about.skill.performance">Performance Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      button.classList.add('active');
+        <section class="section-pro">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="tag" data-i18n="skills.badge">Skills</span>
+                    <h2 data-i18n="skills.title">Technical toolbox</h2>
+                    <p data-i18n="skills.subtitle">Filter by area to quickly understand my core strengths.</p>
+                </div>
 
-      skillChips.forEach(function(chip){
-        const category = chip.getAttribute('data-cat');
+                <div class="filter-wrap reveal">
+                    <button class="filterBtn active" data-filter="all" data-i18n="skills.filter.all">All</button>
+                    <button class="filterBtn" data-filter="ai" data-ai-i18n="skills.filter.ai">AI / ML</button>
+                    <button class="filterBtn" data-filter="backend" data-i18n="skills.filter.backend">Backend</button>
+                    <button class="filterBtn" data-filter="frontend" data-i18n="skills.filter.frontend">Frontend</button>
+                    <button class="filterBtn" data-filter="devops" data-i18n="skills.filter.devops">DevOps</button>
+                    <button class="filterBtn" data-filter="leadership" data-i18n="skills.filter.management">Leadership</button>
+                </div>
 
-        if(filter === 'all' || category === filter){
-          chip.style.display = 'inline-flex';
-        }else{
-          chip.style.display = 'none';
-        }
-      });
-    });
-  });
+                <div class="chips-pro reveal" id="skillsList">
+                    <span class="chip-pro" data-cat="ai">Artificial Intelligence</span>
+                    <span class="chip-pro" data-cat="ai">Python</span>
+                    <span class="chip-pro" data-cat="ai">FastAPI</span>
+                    <span class="chip-pro" data-cat="ai">Machine Learning</span>
+                    <span class="chip-pro" data-cat="ai">Generative AI</span>
+                    <span class="chip-pro" data-cat="ai">RAG</span>
+                    <span class="chip-pro" data-cat="ai">LLMs</span>
+                    <span class="chip-pro" data-cat="ai">scikit-learn</span>
+                    <span class="chip-pro" data-cat="ai">Random Forest</span>
+                    <span class="chip-pro" data-cat="ai">MFCC</span>
+                    <span class="chip-pro" data-cat="ai">FFT</span>
+                    <span class="chip-pro" data-cat="backend">PHP</span>
+                    <span class="chip-pro" data-cat="backend">Laravel</span>
+                    <span class="chip-pro" data-cat="backend">MySQL</span>
+                    <span class="chip-pro" data-cat="backend">MongoDB</span>
+                    <span class="chip-pro" data-cat="backend">REST APIs</span>
+                    <span class="chip-pro" data-cat="backend">SOAP</span>
+                    <span class="chip-pro" data-cat="frontend">HTML5</span>
+                    <span class="chip-pro" data-cat="frontend">CSS3</span>
+                    <span class="chip-pro" data-cat="frontend">JavaScript</span>
+                    <span class="chip-pro" data-cat="frontend">React.js</span>
+                    <span class="chip-pro" data-cat="frontend">Angular</span>
+                    <span class="chip-pro" data-cat="devops">Linux</span>
+                    <span class="chip-pro" data-cat="devops">Apache</span>
+                    <span class="chip-pro" data-cat="devops">Nginx</span>
+                    <span class="chip-pro" data-cat="devops">Docker</span>
+                    <span class="chip-pro" data-cat="devops">AWS</span>
+                    <span class="chip-pro" data-cat="devops">Jenkins</span>
+                    <span class="chip-pro" data-cat="leadership">Scrum</span>
+                    <span class="chip-pro" data-cat="leadership">Jira</span>
+                    <span class="chip-pro" data-cat="leadership" data-i18n="about.skill.projectLeadership">Project Leadership</span>
+                    <span class="chip-pro" data-cat="leadership">Stakeholder Management</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-pro">
+            <div class="container">
+                <div class="recruiter-card reveal">
+                    <h2 data-i18n="home.forRecruiters">For companies and project partners</h2>
+                    <p data-i18n="home.forRecruitersTxt">
+                        Explore my experience, review my technical background, or contact me directly to discuss your software project, architecture needs, SaaS platform, or technical leadership support.
+                    </p>
+
+                    <div class="ctaRow" style="justify-content:center">
+                        <!--<a class="cta ctaPrimary" href="documents.html" data-i18n="common.viewDocuments">View Documents</a>-->
+                        <a class="cta" href="contact.html" data-i18n="common.contactMe">Discuss a Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="footerMount"></div>
+
+        <script src="assets/i18n.js"></script>
+        <script src="assets/app.js"></script>
+
+        <script>
+            const revealItems = document.querySelectorAll('.reveal');
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            }, {threshold: 0.15});
+
+            revealItems.forEach(function (item) {
+                observer.observe(item);
+            });
+
+            const counters = document.querySelectorAll('[data-count]');
+            let started = false;
+
+            function startCounter() {
+                if (started)
+                    return;
+                started = true;
+
+                counters.forEach(function (counter) {
+                    const target = Number(counter.getAttribute('data-count'));
+                    let current = 0;
+                    const step = Math.max(1, Math.ceil(target / 35));
+
+                    const timer = setInterval(function () {
+                        current += step;
+
+                        if (current >= target) {
+                            counter.textContent = target + '+';
+                            clearInterval(timer);
+                        } else {
+                            counter.textContent = current;
+                        }
+                    }, 35);
+                });
+            }
+
+            const counterObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        startCounter();
+                    }
+                });
+            });
+
+            counters.forEach(function (counter) {
+                counterObserver.observe(counter);
+            });
+
+            const filterButtons = document.querySelectorAll('.filterBtn');
+            const skillChips = document.querySelectorAll('#skillsList .chip-pro');
+
+            filterButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    const filter = button.getAttribute('data-filter');
+
+                    filterButtons.forEach(function (btn) {
+                        btn.classList.remove('active');
+                    });
+
+                    button.classList.add('active');
+
+                    skillChips.forEach(function (chip) {
+                        const category = chip.getAttribute('data-cat');
+
+                        if (filter === 'all' || category === filter) {
+                            chip.style.display = 'inline-flex';
+                        } else {
+                            chip.style.display = 'none';
+                        }
+                    });
+                });
+            });
 
 
 
-  const menuToggle = document.getElementById('menuToggle');
-  const navBox = document.querySelector('.nav');
+            const menuToggle = document.getElementById('menuToggle');
+            const navBox = document.querySelector('.nav');
 
-  if(menuToggle && navBox){
-    menuToggle.addEventListener('click', function(){
-      const isOpen = navBox.classList.toggle('mobile-open');
-      menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      menuToggle.textContent = isOpen ? '×' : '☰';
-    });
-  }
+            if (menuToggle && navBox) {
+                menuToggle.addEventListener('click', function () {
+                    const isOpen = navBox.classList.toggle('mobile-open');
+                    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                    menuToggle.textContent = isOpen ? '×' : '☰';
+                });
+            }
 
-  fetch('assets/footer.html', { cache: 'no-store' })
-    .then(function(response){ return response.text(); })
-    .then(function(html){
-      const footerMount = document.getElementById('footerMount');
-      if(footerMount){ footerMount.innerHTML = html; }
+            fetch('assets/footer.html', {cache: 'no-store'})
+                    .then(function (response) {
+                        return response.text();
+                    })
+                    .then(function (html) {
+                        const footerMount = document.getElementById('footerMount');
+                        if (footerMount) {
+                            footerMount.innerHTML = html;
+                        }
 
-      if(window.__setLang){
-        const savedLang = localStorage.getItem('site_lang') || 'en';
-        window.__setLang(savedLang);
-      }
-    })
-    .catch(function(){});
-</script>
+                        if (window.__setLang) {
+                            const savedLang = localStorage.getItem('site_lang') || 'en';
+                            window.__setLang(savedLang);
+                        }
+                    })
+                    .catch(function () {});
+        </script>
 
-<script src="https://187.77.184.173/feedbackflow/widget/widget.js" data-key="a7c9fd8b53842b0a7cfd8001c078b64d" defer></script>
+        <script src="https://187.77.184.173/feedbackflow/widget/widget.js" data-key="a7c9fd8b53842b0a7cfd8001c078b64d" defer></script>
 
-</body>
+    
+        <script>
+        (function () {
+            const aiCopy = {
+                en: {
+                    "home.heroTitle": 'Building scalable software with <span>PHP, Python, AI & Machine Learning.</span>',
+                    "home.heroSubtitle": "Rakesh Prajapati — Senior Software Engineer · PHP · Python · AI · Machine Learning",
+                    "home.heroText": "My four primary technology stacks are PHP, Python, Artificial Intelligence and Machine Learning. I combine them with 12+ years of backend engineering, software architecture and technical leadership to build scalable enterprise solutions.",
+                    "home.profileTitle": "Senior engineering across four primary stacks",
+                    "home.profileText": "Production-oriented engineering across PHP, Python, Artificial Intelligence and Machine Learning, supported by scalable architecture, cloud and DevOps.",
+                    "home.trust.ai": "✅ PHP · Python · AI · Machine Learning",
+                    "home.service.php.title": "PHP Engineering",
+                    "home.service.php.text": "PHP 8.x, Laravel, Symfony, CodeIgniter, Joomla, MySQL, REST APIs and production-grade backend systems.",
+                    "home.service.python.title": "Python Engineering",
+                    "home.service.python.text": "Python, FastAPI, SQLAlchemy, Alembic, PostgreSQL, NumPy, pandas and API-driven backend development.",
+                    "home.service.ai.title": "Artificial Intelligence",
+                    "home.service.ai.text": "Generative AI, RAG, LLMs, embeddings, semantic search, retrieval pipelines and enterprise AI applications.",
+                    "home.service.ml.title": "Machine Learning",
+                    "home.service.ml.text": "scikit-learn, Random Forest, supervised learning, multiclass classification, feature engineering, MFCC, FFT and audio ML.",
+                    "about.subtitle": "Senior Software Engineer and Software Architect with four primary technology stacks: PHP, Python, Artificial Intelligence and Machine Learning, supported by enterprise architecture, cloud and backend engineering.",
+                    "about.text": "I bridge business objectives with scalable technology across PHP, Python, Artificial Intelligence and Machine Learning. My supporting strengths include Generative AI, RAG, APIs, enterprise platforms, cloud delivery, software architecture, DevOps and technical leadership.",
+                    "skills.filter.ai": "AI / ML"
+                },
+                de: {
+                    "home.heroTitle": 'Skalierbare Software mit <span>PHP, Python, KI & Machine Learning.</span>',
+                    "home.heroSubtitle": "Rakesh Prajapati — Senior Software Engineer · PHP · Python · KI · Machine Learning",
+                    "home.heroText": "Meine vier primären Technologie-Stacks sind PHP, Python, Künstliche Intelligenz und Machine Learning. Ich verbinde sie mit mehr als 12 Jahren Erfahrung in Backend-Engineering, Software-Architektur und technischer Führung, um skalierbare Unternehmenslösungen zu entwickeln.",
+                    "home.profileTitle": "Senior Engineering über vier primäre Technologie-Stacks",
+                    "home.profileText": "Produktionsorientiertes Engineering mit PHP, Python, Künstlicher Intelligenz und Machine Learning, unterstützt durch skalierbare Architektur, Cloud und DevOps.",
+                    "home.trust.ai": "✅ PHP · Python · KI · Machine Learning",
+                    "home.service.php.title": "PHP Engineering",
+                    "home.service.php.text": "PHP 8.x, Laravel, Symfony, CodeIgniter, Joomla, MySQL, REST APIs und produktionsreife Backend-Systeme.",
+                    "home.service.python.title": "Python Engineering",
+                    "home.service.python.text": "Python, FastAPI, SQLAlchemy, Alembic, PostgreSQL, NumPy, pandas und API-orientierte Backend-Entwicklung.",
+                    "home.service.ai.title": "Künstliche Intelligenz",
+                    "home.service.ai.text": "Generative AI, RAG, LLMs, Embeddings, semantische Suche, Retrieval-Pipelines und Enterprise-KI-Anwendungen.",
+                    "home.service.ml.title": "Machine Learning",
+                    "home.service.ml.text": "scikit-learn, Random Forest, Supervised Learning, Multiclass Classification, Feature Engineering, MFCC, FFT und Audio ML.",
+                    "about.subtitle": "Senior Software Engineer und Software-Architekt mit vier primären Technologie-Stacks: PHP, Python, Künstliche Intelligenz und Machine Learning, unterstützt durch Enterprise-Architektur, Cloud und Backend-Engineering.",
+                    "about.text": "Ich verbinde Geschäftsziele mit skalierbarer Technologie über PHP, Python, Künstliche Intelligenz und Machine Learning. Meine ergänzenden Stärken umfassen Generative AI, RAG, APIs, Enterprise-Plattformen, Cloud-Delivery, Software-Architektur, DevOps und technische Führung.",
+                    "skills.filter.ai": "KI / ML"
+                }
+            };
+
+            function applyAiCopy() {
+                const lang = localStorage.getItem("site_lang") === "de" ? "de" : "en";
+                document.querySelectorAll("[data-ai-i18n]").forEach(function (el) {
+                    const key = el.getAttribute("data-ai-i18n");
+                    if (aiCopy[lang][key]) el.innerHTML = aiCopy[lang][key];
+                });
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                setTimeout(applyAiCopy, 0);
+                const toggle = document.getElementById("langToggle");
+                if (toggle) toggle.addEventListener("click", function () {
+                    setTimeout(applyAiCopy, 0);
+                });
+            });
+            window.addEventListener("load", function () { setTimeout(applyAiCopy, 50); });
+        })();
+        </script>
+
+    </body>
 </html>

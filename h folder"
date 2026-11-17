@@ -1,0 +1,268 @@
+[1mdiff --git a/contact.php b/contact.php[m
+[1mindex 5187293..fe4f900 100644[m
+[1m--- a/contact.php[m
+[1m+++ b/contact.php[m
+[36m@@ -1,106 +1,157 @@[m
+[31m-<?php[m
+[31m-declare(strict_types=1);[m
+[31m-[m
+[31m-require __DIR__ . '/vendor/autoload.php';[m
+[31m-[m
+[31m-use PHPMailer\PHPMailer\PHPMailer;[m
+[31m-use PHPMailer\PHPMailer\Exception;[m
+[31m-[m
+[31m-$to   = "rp151090@gmail.com";[m
+[31m-$site = "Rakesh Prajapati Portfolio";[m
+[31m-[m
+[31m-function clean($v): string {[m
+[31m-    $v = trim((string)($v ?? ""));[m
+[31m-    $v = str_replace(["\r", "\n"], " ", $v);[m
+[31m-    return $v;[m
+[31m-}[m
+[31m-[m
+[31m-if (!empty($_POST["company"])) { http_response_code(200); exit; } // honeypot[m
+[31m-if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') { header("Location: contact.html"); exit; }[m
+[31m-[m
+[31m-$name  = clean($_POST["name"] ?? "");[m
+[31m-$email = clean($_POST["email"] ?? "");[m
+[31m-$msg   = trim((string)($_POST["message"] ?? ""));[m
+[31m-[m
+[31m-if ($name === "" || $email === "" || $msg === "") { header("Location: contact.html?sent=0"); exit; }[m
+[31m-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) { header("Location: contact.html?sent=0"); exit; }[m
+[31m-[m
+[31m-// ===== SMTP creds (use your Gmail + App Password) =====[m
+[31m-$gmailUser = "rp151090@gmail.com";[m
+[31m-$gmailPass = "gkxdviavowwugiio"; // <-- replace this[m
+[31m-[m
+[31m-try {[m
+[31m-    // 1) Send to you[m
+[31m-    $mail = new PHPMailer(true);[m
+[31m-    $mail->isSMTP();[m
+[31m-    $mail->Host = 'smtp.gmail.com';[m
+[31m-    $mail->SMTPAuth = true;[m
+[31m-    $mail->Username = $gmailUser;[m
+[31m-    $mail->Password = $gmailPass;[m
+[31m-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;[m
+[31m-    $mail->Port = 587;[m
+[31m-    $mail->CharSet = 'UTF-8';[m
+[31m-[m
+[31m-    $mail->setFrom($gmailUser, $site);[m
+[31m-    $mail->addAddress($to);[m
+[31m-    $mail->addReplyTo($email, $name);[m
+[31m-[m
+[31m-    $mail->Subject = "New inquiry from {$name} ({$site})";[m
+[31m-    $mail->Body =[m
+[31m-        "Name: {$name}\nEmail: {$email}\n\nMessage:\n{$msg}\n\n---\nSent from {$site}";[m
+[31m-[m
+[31m-    $mail->send();[m
+[31m-[m
+[31m-    // 2) Auto-reply to visitor (reuse SMTP, new instance is fine)[m
+[31m-    $auto = new PHPMailer(true);[m
+[31m-    $auto->isSMTP();[m
+[31m-    $auto->Host = 'smtp.gmail.com';[m
+[31m-    $auto->SMTPAuth = true;[m
+[31m-    $auto->Username = $gmailUser;[m
+[31m-    $auto->Password = $gmailPass;[m
+[31m-    $auto->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;[m
+[31m-    $auto->Port = 587;[m
+[31m-    $auto->CharSet = 'UTF-8';[m
+[31m-[m
+[31m-    $auto->setFrom($gmailUser, 'Rakesh Prajapati');[m
+[31m-    $auto->addAddress($email, $name);[m
+[31m-[m
+[31m-    $auto->isHTML(true);[m
+[31m-    $auto->Subject = "Thank you for contacting me | Vielen Dank für Ihre Nachricht";[m
+[31m-[m
+[31m-    $safeName = htmlspecialchars($name, ENT_QUOTES, 'UTF-8');[m
+[31m-[m
+[31m-    $auto->Body = "[m
+[31m-      <div style='font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#333;'>[m
+[31m-        <p><strong>Dear {$safeName},</strong></p>[m
+[31m-        <p>Thank you for reaching out to me. I have received your message and will reply as soon as possible.</p>[m
+[31m-        <p>Best regards,<br><strong>Rakesh Prajapati</strong><br>[m
+[31m-         Senior Software Engineer/ Software Architect  / Project Manager</p>[m
+[31m-[m
+[31m-        <hr style='margin:22px 0;'>[m
+[31m-[m
+[31m-        <p><strong>Hallo {$safeName},</strong></p>[m
+[31m-        <p>vielen Dank für Ihre Nachricht. Ich habe Ihre Anfrage erhalten und melde mich so schnell wie möglich.</p>[m
+[31m-        <p>Mit freundlichen Grüßen<br><strong>Rakesh Prajapati</strong><br>[m
+[31m-         Senior Software Engineer / Software Architekt / Projektmanager</p>[m
+[31m-[m
+[31m-        <p style='font-size:12px;color:#777;margin-top:18px;'>[m
+[31m-          (Automatic confirmation / Automatische Bestätigung)[m
+[31m-        </p>[m
+[31m-      </div>[m
+[31m-    ";[m
+[31m-[m
+[31m-    $auto->send();[m
+[31m-[m
+[31m-    header("Location: contact.html?sent=1");[m
+[31m-    exit;[m
+[31m-[m
+[31m-} catch (Exception $e) {[m
+[31m-    // Log exact reason[m
+[31m-    @file_put_contents(__DIR__ . '/mail_error.log',[m
+[31m-        date('c') . " | EX=" . $e->getMessage() . " | INFO=" . ($mail->ErrorInfo ?? '') . "\n",[m
+[31m-        FILE_APPEND[m
+[31m-    );[m
+[31m-    header("Location: contact.html?sent=0");[m
+[31m-    exit;[m
+[32m+[m[32m<?php[m[41m[m
+[32m+[m[41m [m
+[32m+[m[32mdeclare(strict_types=1);[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mrequire __DIR__ . '/vendor/autoload.php';[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32muse PHPMailer\PHPMailer\PHPMailer;[m[41m[m
+[32m+[m[32muse PHPMailer\PHPMailer\Exception;[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m$to = "info@trustnovatech.de";[m[41m[m
+[32m+[m[32m$site = "TrustNova Tech / Rakesh Prajapati Portfolio";[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mfunction clean($v): string {[m[41m[m
+[32m+[m[32m    $v = trim((string) ($v ?? ""));[m[41m[m
+[32m+[m[32m    $v = str_replace(["\r", "\n"], " ", $v);[m[41m[m
+[32m+[m[32m    return $v;[m[41m[m
+[32m+[m[32m}[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mif (!empty($_POST["company"])) {[m[41m[m
+[32m+[m[32m    http_response_code(200);[m[41m[m
+[32m+[m[32m    exit;[m[41m[m
+[32m+[m[32m} // honeypot[m[41m[m
+[32m+[m[32mif (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {[m[41m[m
+[32m+[m[32m    header("Location: contact.html");[m[41m[m
+[32m+[m[32m    exit;[m[41m[m
+[32m+[m[32m}[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m$name = clean($_POST["name"] ?? "");[m[41m[m
+[32m+[m[32m$email = clean($_POST["email"] ?? "");[m[41m[m
+[32m+[m[32m$msg = trim((string) ($_POST["message"] ?? ""));[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mif ($name === "" || $email === "" || $msg === "") {[m[41m[m
+[32m+[m[32m    header("Location: contact.html?sent=0");[m[41m[m
+[32m+[m[32m    exit;[m[41m[m
+[32m+[m[32m}[m[41m[m
+[32m+[m[32mif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {[m[41m[m
+[32m+[m[32m    header("Location: contact.html?sent=0");[m[41m[m
+[32m+[m[32m    exit;[m[41m[m
+[32m+[m[32m}[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m// ===== SMTP creds (use your Gmail + App Password) =====[m[41m[m
+[32m+[m[32m//$gmailUser = "rp151090@gmail.com";[m[41m[m
+[32m+[m[32m//$gmailPass = "gkxdviavowwugiio"; // <-- replace this[m[41m[m
+[32m+[m[32m$hostingerUser = 'info@trustnovatech.de';[m[41m[m
+[32m+[m[32m$hostingerPass = 'Q!Ls$Ay76Bzf#jQQ';[m[41m[m
+[32m+[m[32mtry {[m[41m[m
+[32m+[m[32m    // 1) Send to you[m[41m[m
+[32m+[m[32m    $mail = new PHPMailer(true);[m[41m[m
+[32m+[m[32m    $mail->isSMTP();[m[41m[m
+[32m+[m[32m    $mail->Host = 'smtp.hostinger.com';[m[41m[m
+[32m+[m[32m    $mail->SMTPAuth = true;[m[41m[m
+[32m+[m[32m    $mail->Username = $hostingerUser;[m[41m[m
+[32m+[m[32m    $mail->Password = $hostingerPass;[m[41m[m
+[32m+[m[32m    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;[m[41m[m
+[32m+[m[32m    $mail->Port = 587;[m[41m[m
+[32m+[m[32m    $mail->CharSet = 'UTF-8';[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m    $mail->setFrom($hostingerUser, $site);[m[41m[m
+[32m+[m[32m    $mail->addAddress($to);[m[41m[m
+[32m+[m[32m    $mail->addReplyTo($email, $name);[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m    $mail->Subject = "New inquiry from {$name} ({$site})";[m[41m[m
+[32m+[m[32m    $mail->Body = "Name: {$name}\nEmail: {$email}\n\nMessage:\n{$msg}\n\n---\nSent from {$site}";[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m    $mail->send();[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m    // 2) Auto-reply to visitor (reuse SMTP, new instance is fine)[m[41m[m
+[32m+[m[32m    $auto = new PHPMailer(true);[m[41m[m
+[32m+[m[32m    $auto->isSMTP();[m[41m[m
+[32m+[m[32m    $auto->Host = 'smtp.hostinger.com';[m[41m[m
+[32m+[m[32m    $auto->SMTPAuth = true;[m[41m[m
+[32m+[m[32m    $auto->Username = $hostingerUser;[m[41m[m
+[32m+[m[32m    $auto->Password = $hostingerPass;[m[41m[m
+[32m+[m[32m    $auto->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;[m[41m[m
+[32m+[m[32m    $auto->Port = 587;[m[41m[m
+[32m+[m[32m    $auto->CharSet = 'UTF-8';[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m    $auto->setFrom($hostingerUser, 'TrustNova Tech');[m[41m[m
+[32m+[m[32m    $auto->addAddress($email, $name);[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m    $auto->isHTML(true);[m[41m[m
+[32m+[m[32m    $auto->Subject = "Vielen Dank für Ihre Nachricht";[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m    $safeName = htmlspecialchars($name, ENT_QUOTES, 'UTF-8');[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m    $auto->Body = "[m[41m[m
+[32m+[m[32m<div style='font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#333;'>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m  <!-- GERMAN -->[m[41m[m
+[32m+[m[32m  <p><strong>Hallo {$safeName},</strong></p>[m[41m[m
+[32m+[m[32m  <p>vielen Dank für Ihre Nachricht. Ich habe Ihre Anfrage erhalten und melde mich so schnell wie möglich.</p>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m  <p>Mit freundlichen Grüßen,</p>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m  <!-- SIGNATURE AGAIN -->[m[41m[m
+[32m+[m[32m  <table cellpadding='0' cellspacing='0' style='font-family:Arial,Helvetica,sans-serif; color:#111; margin-top:10px;'>[m[41m[m
+[32m+[m[32m    <tr>[m[41m[m
+[32m+[m[41m      [m
+[32m+[m[32m      <td style='vertical-align:middle; padding-right:18px; border-right:2px solid #e5e5e5;'>[m[41m[m
+[32m+[m[32m        <img src='https://trustnovatech.com/assets/images/logo.png' width='120' alt='TrustNova Tech' style='display:block;'>[m[41m[m
+[32m+[m[32m      </td>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m      <td style='vertical-align:middle; padding-left:18px; font-size:13px; line-height:1.6;'>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m        <div style='font-size:17px; font-weight:bold; color:#002b5c;'>Rakesh Prajapati</div>[m[41m[m
+[32m+[m[32m        <div style='color:#333;'>Founder &amp; Software Engineer</div>[m[41m[m
+[32m+[m[32m        <div style='font-weight:bold; color:#0a66c2;'>TrustNova Tech</div>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m        <div style='margin:8px 0; color:#555;'>[m[41m[m
+[32m+[m[32m          Neuenstadt am Kocher · Heilbronn Region · Germany[m[41m[m
+[32m+[m[32m        </div>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m        <div>[m[41m[m
+[32m+[m[32m          <a href='https://trustnovatech.com' style='color:#0a66c2; text-decoration:none;'>www.trustnovatech.com</a>[m[41m[m
+[32m+[m[32m        </div>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m        <div>[m[41m[m
+[32m+[m[32m          <a href='mailto:info@trustnovatech.de' style='color:#0a66c2; text-decoration:none;'>info@trustnovatech.de</a>[m[41m[m
+[32m+[m[32m        </div>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m        <div style='color:#000; font-weight:bold;'>[m[41m[m
+[32m+[m[32m          +49 176 66145047[m[41m[m
+[32m+[m[32m        </div>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m        <div style='margin-top:10px; padding-top:8px; border-top:1px solid #eeeeee; font-size:12px; color:#777;'>[m[41m[m
+[32m+[m[32m          Custom Software · SaaS Platforms · Web Applications · Cloud Solutions[m[41m[m
+[32m+[m[32m        </div>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m        <div style='margin-top:10px; color:#333;'>[m[41m[m
+[32m+[m[32m          Gerne können wir auch kurz telefonieren, um Ihre Anforderungen unverbindlich zu besprechen.[m[41m[m
+[32m+[m[32m        </div>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m      </td>[m[41m[m
+[32m+[m[32m    </tr>[m[41m[m
+[32m+[m[32m  </table>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m  <p style='font-size:12px;color:#777;margin-top:18px;'>[m[41m[m
+[32m+[m[32m    (Automatic confirmation / Automatische Bestätigung)[m[41m[m
+[32m+[m[32m  </p>[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m</div>[m[41m[m
+[32m+[m[32m";[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m    $auto->send();[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m    header("Location: contact.html?sent=1");[m[41m[m
+[32m+[m[32m    exit;[m[41m[m
+[32m+[m[32m} catch (Exception $e) {[m[41m[m
+[32m+[m[32m    // Log exact reason[m[41m[m
+[32m+[m[32m    @file_put_contents(__DIR__ . '/mail_error.log',[m[41m[m
+[32m+[m[32m                    date('c') . " | EX=" . $e->getMessage() . " | INFO=" . ($mail->ErrorInfo ?? '') . "\n",[m[41m[m
+[32m+[m[32m                    FILE_APPEND[m[41m[m
+[32m+[m[32m    );[m[41m[m
+[32m+[m[32m    header("Location: contact.html?sent=0");[m[41m[m
+[32m+[m[32m    exit;[m[41m[m
+ }[m
+\ No newline at end of file[m
